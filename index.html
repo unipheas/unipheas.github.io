@@ -887,6 +887,19 @@
 
     <!-- Scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script>
+        function initMap() {
+          var uluru = {lat: 30.5466451, lng: 104.2863191};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzTOgSXu9e53rpKpcEThfq5kFoxs4DCQQ&callback=initMap"></script>
     <script type="text/javascript" src="fonts/map-icons/js/map-icons.min.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.mousewheel-3.0.6.pack.js"></script>
