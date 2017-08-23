@@ -838,7 +838,7 @@
                                         <span><a href="mailto:info@polyphasicdevs.com">info@polyphasicdevs.com</a></span>
                                     </li>
                                 </ul>
-                                <div id="map" data-latitude="30.5466451" data-longitude="104.2863191"></div>
+                                <div id="gmap"></div>
                             </div>
                         </div>
                     </div>
@@ -890,7 +890,7 @@
     <script>
         function initMap() {
           var uluru = {lat: 30.5466451, lng: 104.2863191};
-          var map = new google.maps.Map(document.getElementById('map'), {
+          var map = new google.maps.Map(document.getElementById('gmap'), {
             zoom: 4,
             center: uluru
           });
