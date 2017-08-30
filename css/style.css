@@ -4603,7 +4603,7 @@ body {
     height: 41px;
     display: block;
     position: absolute;
-    background-image: url(img/arrows.png);
+    background-image: url(../img/arrows.png);
     background-repeat: no-repeat;
 }
 
@@ -6428,7 +6428,7 @@ body {
 }
 
 .theme-skin-dark .grid-more .ajax-loader {
-    background: url("img/ajax-loader-dark.gif");
+    background: url("../img/ajax-loader-dark.gif");
 }
 
 .theme-skin-dark .timeline-box-left .timeline-box-inner .arrow:before {
@@ -6668,4 +6668,8 @@ body {
     border: 1px solid #525458 !important;
 }
 
+.wakatime {
+    max-width: 60%;
+    margin: auto;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1100,7 +1100,7 @@
         }
 
 		/** Window smooth scroll to an anchor */
-		windowSmoothScrollOnLoad();
+		// windowSmoothScrollOnLoad();
 
         /** Preloader:
          *  site was successfully loaded, hide site pre-loader */
