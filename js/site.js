@@ -87,21 +87,21 @@
 
   // --- Split-Flap Card Cycling ---
   var projects = [
-    { name: "Tommy's Express POS", description: "Mission-critical POS across 250+ locations with Stripe & LPR integration", tags: ["Swift", "SwiftUI", "Stripe"], role: "Mobile Dev Manager" },
-    { name: "Tommy Express App", description: "Cross-platform consumer app for iOS and Android", tags: ["React Native"], role: "Mobile Dev Manager" },
-    { name: "TCW FLEX POS", description: "Interior detail belt management system for new wash sites", tags: ["Swift", "SwiftUI", "SPM"], role: "Senior iOS Engineer" },
-    { name: "Infinite Miner", description: "Browser-based idle mining game with procedural generation & prestige systems", tags: ["Web App", "Game Dev"], role: "Co-Creator", url: "https://infiniteminer.com" },
-    { name: "MAVSDK-Swift", description: "Open-source Swift library for autonomous drone control via MAVLink", tags: ["Swift", "RxSwift", "MAVLink"], role: "OSS Maintainer" },
-    { name: "MotoCare", description: "iOS app for motorcycle riders to track service history and maintenance", tags: ["SwiftUI", "SwiftData"], role: "Creator" },
-    { name: "StreetBookies", description: "iOS app helping homeschoolers find local neighborhood libraries", tags: ["SwiftUI", "Firebase"], role: "Creator" },
-    { name: "Circle Check", description: "GPS-powered safety inspection app for fleet operations", tags: ["Swift", "GPS", "Maps"], role: "iOS Engineer" },
-    { name: "Corporate Tools", description: "Enterprise backend suite — automated filing system increased revenue $300K/week", tags: ["Node.js", "Puppeteer", "Rails"], role: "Software Engineer" },
-    { name: "Corporate Phone", description: "Cutting-edge iOS app built from ground up with TDD and CI/CD", tags: ["Swift", "SPM", "CircleCI"], role: "iOS Engineer" },
-    { name: "Pepsi Halftime Show", description: "Interactive Super Bowl halftime experience for PepsiCo & NFL", tags: ["Vue/Nuxt", "Animation"], role: "Frontend Developer" },
-    { name: "Nike / Amazon / Toyota", description: "Immersive digital brand experiences for global campaigns", tags: ["AR/VR", "WebXR"], role: "Frontend Developer" },
-    { name: "QuickLoad", description: "Hackathon-winning logistics app automating shipment assignments", tags: ["Swift", "UX Design"], role: "Hackathon Winner" },
-    { name: "Lucky English", description: "Phonics app teaching English alphabet sounds to children", tags: ["Swift", "EdTech"], role: "Creator" },
-    { name: "RipATrip", description: "Travel search iOS app with GPS features and REST API integration", tags: ["Swift", "REST APIs"], role: "iOS Developer" }
+    { name: "Tommy's Express POS", description: "The POS system behind 250+ car wash locations — Stripe payments, license plate recognition, thousands of daily transactions", tags: ["Swift", "SwiftUI", "Stripe"], role: "Engineering Lead" },
+    { name: "Tommy Express App", description: "Consumer-facing mobile app for iOS and Android, serving the Tommy's Express customer base", tags: ["React Native"], role: "Engineering Lead" },
+    { name: "TCW FLEX POS", description: "Built the interior detail belt management system from scratch for new wash site rollouts", tags: ["Swift", "SwiftUI", "SPM"], role: "Senior Engineer" },
+    { name: "Infinite Miner", description: "Browser-based idle mining game with procedural generation and prestige systems — a side project that got out of hand (in a good way)", tags: ["Web App", "Game Dev"], role: "Co-Creator", url: "https://infiniteminer.com" },
+    { name: "MAVSDK-Swift", description: "Maintained the open-source Swift library that lets developers control autonomous drones via MAVLink", tags: ["Swift", "RxSwift", "MAVLink"], role: "OSS Maintainer" },
+    { name: "MotoCare", description: "Built an iOS app for motorcycle riders to track service history — because I ride and needed it myself", tags: ["SwiftUI", "SwiftData"], role: "Creator" },
+    { name: "StreetBookies", description: "iOS app helping homeschool families find local neighborhood libraries — built it for my own kids", tags: ["SwiftUI", "Firebase"], role: "Creator" },
+    { name: "Circle Check", description: "GPS-powered safety inspection app for fleet operations — delivered for clients including NAV Canada", tags: ["Swift", "GPS", "Maps"], role: "Lead Engineer" },
+    { name: "Corporate Tools", description: "Built an automated filing system that added $300K/week in revenue. Not a typo.", tags: ["Node.js", "Puppeteer", "Rails"], role: "Software Engineer" },
+    { name: "Corporate Phone", description: "Built a production iOS app from zero with full TDD and CI/CD — shipped to App Store on schedule", tags: ["Swift", "SPM", "CircleCI"], role: "iOS Engineer" },
+    { name: "Pepsi Halftime Show", description: "Interactive Super Bowl halftime experience for PepsiCo and the NFL — yes, that Super Bowl", tags: ["Vue/Nuxt", "Animation"], role: "Frontend Developer" },
+    { name: "Nike / Amazon / Toyota", description: "Immersive AR/VR brand experiences for three of the biggest companies on the planet", tags: ["AR/VR", "WebXR"], role: "Frontend Developer" },
+    { name: "QuickLoad", description: "Won a hackathon with this logistics app that automated shipment assignments in China's freight system", tags: ["Swift", "UX Design"], role: "Hackathon Winner" },
+    { name: "Lucky English", description: "Phonics app teaching English to kids — built while living and teaching in Asia", tags: ["Swift", "EdTech"], role: "Creator" },
+    { name: "RipATrip", description: "Travel search iOS app with GPS and REST API integration — full stack, soup to nuts", tags: ["Swift", "REST APIs"], role: "Full-Stack Developer" }
   ];
 
   // Track which project index each card is showing
