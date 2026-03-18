@@ -451,7 +451,7 @@ img {
 /* --- Services --- */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
@@ -473,6 +473,31 @@ img {
   font-size: 14px;
   color: var(--color-secondary);
   line-height: 1.6;
+}
+
+/* --- How I Work / Approach --- */
+.approach-lead {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.approach-body {
+  font-size: 15px;
+  color: var(--color-secondary);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.approach-body:last-child {
+  margin-bottom: 0;
+}
+
+.approach-body strong {
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 /* --- Proof Stories --- */
