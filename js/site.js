@@ -41,27 +41,11 @@
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!reducedMotion) {
-    var animElements = document.querySelectorAll('.animate-on-scroll, .slide-left');
+    var animElements = document.querySelectorAll('.animate-on-scroll');
 
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          // Stagger delay for slide-left elements within the same parent
-          if (entry.target.classList.contains('slide-left')) {
-            var parent = entry.target.parentElement;
-            var siblings = parent.querySelectorAll('.slide-left');
-            var index = Array.prototype.indexOf.call(siblings, entry.target);
-            entry.target.style.transitionDelay = (index * 100) + 'ms';
-          }
-
-          // Stagger skill tags
-          if (entry.target.querySelector('.skill-tag')) {
-            var tags = entry.target.querySelectorAll('.skill-tag');
-            tags.forEach(function (tag, i) {
-              tag.style.transitionDelay = (i * 50) + 'ms';
-            });
-          }
-
           entry.target.classList.add('is-visible');
           observer.unobserve(entry.target);
         }
@@ -76,12 +60,8 @@
     });
   } else {
     // If reduced motion, make everything visible immediately
-    document.querySelectorAll('.animate-on-scroll, .slide-left').forEach(function (el) {
+    document.querySelectorAll('.animate-on-scroll').forEach(function (el) {
       el.classList.add('is-visible');
-    });
-    document.querySelectorAll('.skill-tag').forEach(function (tag) {
-      tag.style.opacity = '1';
-      tag.style.transform = 'none';
     });
   }
 

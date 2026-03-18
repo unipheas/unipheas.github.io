@@ -448,81 +448,55 @@ img {
   to { transform: rotateX(0); }
 }
 
-/* --- Experience --- */
-.exp-chapter {
-  margin-bottom: 28px;
+/* --- Services --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }
 
-.exp-chapter:last-child {
-  margin-bottom: 0;
+.service-card {
+  background: var(--color-surface);
+  border-radius: 16px;
+  padding: 28px;
 }
 
-.exp-chapter-title {
-  font-size: 13px;
-  font-weight: 600;
+.service-title {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
   color: var(--color-primary);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-.exp-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--color-border);
+.service-description {
   font-size: 14px;
   color: var(--color-secondary);
+  line-height: 1.6;
 }
 
-.exp-role {
-  font-weight: 500;
+/* --- Proof Stories --- */
+.proof-story {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
 }
 
-.exp-company {
-  color: var(--color-tertiary);
+.proof-story:last-child {
+  border-bottom: none;
 }
 
-.exp-date {
-  color: var(--color-tertiary);
-  font-size: 13px;
-  white-space: nowrap;
-  margin-left: 16px;
-}
-
-/* --- Capabilities --- */
-.skills-group {
-  margin-bottom: 24px;
-}
-
-.skills-group:last-child {
-  margin-bottom: 0;
-}
-
-.skills-group-title {
-  font-size: 13px;
+.proof-headline {
+  font-size: 17px;
   font-weight: 600;
+  letter-spacing: -0.3px;
   color: var(--color-primary);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.skills-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skill-tag {
-  font-size: 13px;
-  background: var(--color-surface);
-  color: var(--color-primary);
-  padding: 6px 14px;
-  border-radius: 100px;
-}
-
-.skill-tag--accent {
-  border: 1.5px solid var(--color-accent);
-  background: rgba(0, 113, 227, 0.05);
-  color: var(--color-accent);
+.proof-body {
+  font-size: 15px;
+  color: var(--color-secondary);
+  line-height: 1.7;
 }
 
 /* --- Contact --- */
@@ -583,17 +557,6 @@ img {
   transform: translateX(0);
 }
 
-/* Staggered tag fade-in */
-.skills-tags .skill-tag {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.animate-on-scroll.is-visible .skill-tag {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
@@ -610,12 +573,6 @@ img {
   }
 
   .slide-left {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-
-  .skills-tags .skill-tag {
     opacity: 1;
     transform: none;
     transition: none;
@@ -669,13 +626,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .exp-row {
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .exp-date {
-    margin-left: 0;
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 
   .mobile-nav-links {
@@ -737,11 +689,6 @@ img {
     opacity: 1;
     transform: none;
     transition: none;
-  }
-
-  .skills-tags .skill-tag {
-    opacity: 1;
-    transform: none;
   }
 
   .nav-header,
