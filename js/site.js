@@ -88,7 +88,7 @@
   // --- Split-Flap Card Cycling ---
   var projects = [
     { name: "Tommy's Express POS", description: "The POS system behind 250+ car wash locations — Stripe payments, license plate recognition, thousands of daily transactions", tags: ["Swift", "SwiftUI", "Stripe"], role: "Engineering Lead" },
-    { name: "Tommy Express App", description: "Consumer-facing mobile app for iOS and Android, serving the Tommy's Express customer base", tags: ["React Native"], role: "Engineering Lead" },
+    { name: "Tommy Express App", description: "Consumer-facing mobile app with 2M+ active users across iOS and Android", tags: ["React Native"], role: "Engineering Lead" },
     { name: "TCW FLEX POS", description: "Built the interior detail belt management system from scratch for new wash site rollouts", tags: ["Swift", "SwiftUI", "SPM"], role: "Senior Engineer" },
     { name: "Infinite Miner", description: "Browser-based idle mining game with procedural generation and prestige systems — a side project that got out of hand (in a good way)", tags: ["Web App", "Game Dev"], role: "Co-Creator", url: "https://infiniteminer.com" },
     { name: "MAVSDK-Swift", description: "Maintained the open-source Swift library that lets developers control autonomous drones via MAVLink", tags: ["Swift", "RxSwift", "MAVLink"], role: "OSS Maintainer" },
