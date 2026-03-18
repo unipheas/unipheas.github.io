@@ -16,7 +16,7 @@ Complete redesign of Brian Phillips' portfolio site (unipheas.github.io) from a 
 - Pure HTML5, CSS3, vanilla JavaScript
 - No frameworks, no build tools, no npm
 - System font stack: `-apple-system, SF Pro Display, SF Pro Text, system-ui, sans-serif`
-- CSS-only animations with Intersection Observer for scroll triggers
+- CSS transforms + opacity for visual effects; JS for timing, content management, and Intersection Observer scroll triggers
 - `prefers-reduced-motion` media query respected throughout
 - Deploys directly to GitHub Pages via push
 
@@ -39,6 +39,7 @@ Complete redesign of Brian Phillips' portfolio site (unipheas.github.io) from a 
 | Element | Size | Weight | Tracking |
 |---------|------|--------|----------|
 | Hero headline | 48px (desktop) / 32px (mobile) | 700 | -1.5px |
+| Hero subline | 17px | 400 | normal |
 | Section title | 28px | 700 | -0.5px |
 | Section label | 11px uppercase | 400 | 2px |
 | Subheading | 21px | 600 | -0.3px |
@@ -58,14 +59,24 @@ Complete redesign of Brian Phillips' portfolio site (unipheas.github.io) from a 
 
 ## Site Structure
 
-Single-page layout with 6 sections, smooth-scroll navigation.
+Single-page layout with 6 content sections plus nav and footer, smooth-scroll navigation.
+
+### Accessibility
+
+- Semantic HTML landmarks: `<nav>`, `<main>`, `<section>`, `<footer>`
+- Keyboard-navigable: all links and nav items focusable via Tab
+- Visible focus styles on all interactive elements (outline with offset)
+- Hamburger menu toggle has `aria-label="Toggle navigation"` and `aria-expanded`
+- Split-flap card region marked `aria-live="polite"` so screen readers announce content changes without being intrusive
+- All animations respect `@media (prefers-reduced-motion: reduce)`
+- `@media print` stylesheet: hides animations, shows all project cards statically, adjusts layout for paper
 
 ### 1. Navigation
 
 Fixed top bar:
 - Left: "Brian Phillips" (text, font-weight 600)
 - Right: About | Work | Experience | Contact (12px, color-tertiary)
-- Mobile: hamburger menu
+- Mobile (≤768px): hamburger icon button, opens a full-width dropdown overlay with nav links stacked vertically. Closes via X button or tapping outside. Slide-down animation (0.3s ease).
 - Border-bottom: 1px solid color-border
 - Becomes sticky on scroll
 
@@ -97,7 +108,12 @@ Fixed top bar:
 - **Layout:** 2×2 grid of cards (stacks to 1 column on mobile)
 - **Behavior:** Each card independently cycles to a random project every 10–15 seconds
 - **Constraint:** No two cards show the same project simultaneously
-- **Animation:** Split-flap effect — card content splits horizontally at midpoint, top half flips down revealing new content, bottom half follows. CSS 3D transforms with `perspective` and `rotateX`.
+- **Animation:** Split-flap (Solari board) effect using CSS 3D transforms:
+  1. Phase 1 (0–0.3s): Top half of current content rotates forward (0 → -90deg on X axis), disappearing
+  2. Phase 2 (0.3–0.6s): New top half rotates in (90deg → 0), bottom content swaps instantly at the midpoint
+  3. Uses `perspective: 800px`, `backface-visibility: hidden`, `will-change: transform` on animated elements
+- **Initial state:** All 4 cards start populated with random non-duplicate projects on page load
+- **Minimum pool size:** At least 5 projects required for the cycling to work correctly
 
 #### Card Structure
 
@@ -220,7 +236,7 @@ Skills grouped into business-friendly categories with pill tags:
 | Contact | Fade-up | Scroll into view | 0.6s ease |
 
 All animations:
-- CSS-only (transforms + opacity), no JS animation libraries
+- CSS transforms + opacity for visual effects; JS handles timing, content swaps, and Intersection Observer triggers. No animation libraries.
 - Intersection Observer API triggers scroll-based animations
 - `@media (prefers-reduced-motion: reduce)` disables all animations
 - Each animation fires once (no repeat on re-scroll)
