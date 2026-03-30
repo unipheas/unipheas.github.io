@@ -244,7 +244,7 @@ img {
 
 /* --- Hero --- */
 .hero {
-  padding: 100px 0 80px;
+  padding: 88px 0 68px;
   text-align: center;
 }
 
@@ -257,12 +257,14 @@ img {
 }
 
 .hero-headline {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 700;
-  letter-spacing: -1.5px;
-  line-height: 1.05;
+  letter-spacing: -1.2px;
+  line-height: 1.12;
   color: var(--color-primary);
-  margin-bottom: 20px;
+  margin: 0 auto 24px;
+  max-width: 760px;
+  text-wrap: balance;
 }
 
 .hero-subline {
@@ -271,10 +273,11 @@ img {
   line-height: 1.5;
   max-width: 680px;
   margin: 0 auto;
+  text-wrap: pretty;
 }
 
 .hero-scroll-indicator {
-  margin-top: 40px;
+  margin-top: 28px;
   font-size: 20px;
   color: var(--color-tertiary);
 }
