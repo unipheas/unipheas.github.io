@@ -269,7 +269,7 @@ img {
   font-size: 17px;
   color: var(--color-tertiary);
   line-height: 1.5;
-  max-width: 460px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -295,7 +295,7 @@ img {
 
 /* --- About --- */
 .about-content {
-  max-width: 560px;
+  max-width: var(--max-width);
 }
 
 .about-lead {
