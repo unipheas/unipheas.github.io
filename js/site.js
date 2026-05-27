@@ -395,13 +395,13 @@
   function startCycling() {
     cards.forEach(function (card, i) {
       function scheduleFlip() {
-        var delay = 10000 + Math.random() * 5000; // 10-15 seconds
+        var delay = 6000 + Math.random() * 4000; // 6-10 seconds
         setTimeout(function () {
           flipCard(i);
           scheduleFlip();
         }, delay);
       }
-      setTimeout(scheduleFlip, 2000 + i * 1500);
+      setTimeout(scheduleFlip, 1500 + i * 900);
     });
   }
 
