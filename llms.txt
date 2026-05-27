@@ -45,6 +45,6 @@ Canada, IBM, and Rigetti. Maintainer of the open-source MAVSDK-Swift project.
 
 ## Contact
 
-- Email: unipheas@protonmail.com
+- Email: brian.phillips@unipheas.com
 - GitHub: https://github.com/unipheas
 - Website: https://unipheas.github.io/
