@@ -379,7 +379,7 @@ img {
 /* --- Flip Card --- */
 .flip-card {
   perspective: 800px;
-  height: 260px;
+  height: 150px;
 }
 
 .flip-card-inner {
@@ -391,7 +391,7 @@ img {
 .flip-card-content {
   background: var(--color-surface);
   border-radius: 16px;
-  padding: 28px;
+  padding: 24px;
   height: 100%;
   overflow: hidden;
 }
@@ -408,6 +408,10 @@ img {
   color: var(--color-tertiary);
   margin-top: 6px;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-tags {
@@ -1155,6 +1159,12 @@ img {
 
   .flip-card {
     height: auto;
+  }
+
+  .card-description {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
   }
 
   /* Show all projects statically in print */

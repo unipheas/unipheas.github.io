@@ -310,15 +310,8 @@
 
   function renderCardContent(project) {
     var desc = (currentLang === 'zh' && project.d_zh) ? project.d_zh : project.description;
-    var role = (currentLang === 'zh' && project.r_zh) ? project.r_zh : project.role;
-    var tagsHtml = project.tags.map(function (tag) {
-      return '<span class="card-tag">' + tag + '</span>';
-    }).join('');
-
     return '<div class="card-title">' + project.name + '</div>' +
-      '<div class="card-description">' + desc + '</div>' +
-      '<div class="card-tags">' + tagsHtml + '</div>' +
-      '<div class="card-role">' + role + '</div>';
+      '<div class="card-description">' + desc + '</div>';
   }
 
   function getRandomProjectIndex(exclude) {
