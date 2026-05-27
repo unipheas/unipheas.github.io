@@ -158,12 +158,13 @@ img {
 }
 
 .nav-inner {
-  max-width: var(--max-width);
+  max-width: var(--max-width-wide);
   margin: 0 auto;
   padding: 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 
 .nav-logo {
@@ -172,6 +173,7 @@ img {
   letter-spacing: -0.3px;
   color: var(--color-primary);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-logo:hover {
@@ -180,7 +182,7 @@ img {
 
 .nav-links {
   display: flex;
-  gap: 24px;
+  gap: 22px;
   list-style: none;
 }
 
@@ -189,6 +191,7 @@ img {
   color: var(--color-tertiary);
   text-decoration: none;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -997,7 +1000,8 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+/* Collapse the full nav to the hamburger before it gets cramped */
+@media (max-width: 960px) {
   .nav-links {
     display: none;
   }
@@ -1017,7 +1021,9 @@ img {
   .mobile-nav {
     display: block;
   }
+}
 
+@media (max-width: 768px) {
   .nav-inner {
     padding: 16px 24px;
   }
