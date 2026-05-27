@@ -70,7 +70,6 @@
     { name: "Tommy's Express POS", description: "I run the POS platform behind 250+ car wash locations: payments, license plate recognition, and a lot of transactions a day.", tags: ["Swift", "SwiftUI", "Stripe"], role: "Mobile Development Manager" },
     { name: "Tommy Express App", description: "I lead the consumer app, used by more than 2 million people on iOS and Android.", tags: ["React Native"], role: "Mobile Development Manager" },
     { name: "TCW FLEX POS", description: "Built a new internal product for site rollouts and day-to-day belt management.", tags: ["Swift", "SwiftUI", "SPM"], role: "Senior iOS Engineer" },
-    { name: "Infinite Miner", description: "Built and still run this live browser game on my own, using an AI-assisted workflow.", tags: ["Web App", "Game Dev"], role: "Co-Creator", url: "https://infiniteminer.com" },
     { name: "MAVSDK-Swift", description: "Maintained the open-source Swift client for flying autonomous drones over MAVLink.", tags: ["Swift", "RxSwift", "MAVLink"], role: "OSS Maintainer" },
     { name: "MotoCare", description: "iOS app for riders to track maintenance history, service intervals, and vehicle records.", tags: ["SwiftUI", "SwiftData"], role: "Creator" },
     { name: "StreetBookies", description: "iOS app that helps homeschool families find neighborhood libraries and learning resources.", tags: ["SwiftUI", "Firebase"], role: "Creator" },
