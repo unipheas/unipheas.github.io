@@ -12,6 +12,7 @@
 }
 
 :root {
+  color-scheme: light;
   --color-primary: #1d1d1f;
   --color-secondary: #424245;
   --color-tertiary: #86868b;
@@ -19,10 +20,42 @@
   --color-surface: #f5f5f7;
   --color-border: #e8e8e8;
   --color-accent: #0071e3;
+  --color-on-primary: #ffffff;
+  --color-primary-hover: #000000;
 
   --font-stack: -apple-system, 'SF Pro Display', 'SF Pro Text', system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --max-width: 800px;
   --max-width-wide: 1080px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-primary: #f5f5f7;
+  --color-secondary: #c7c7cc;
+  --color-tertiary: #8e8e93;
+  --color-background: #0b0b0c;
+  --color-surface: #1c1c1e;
+  --color-border: #2c2c2e;
+  --color-accent: #2997ff;
+  --color-on-primary: #0b0b0c;
+  --color-primary-hover: #ffffff;
+}
+
+/* Smooth theme transition on themed surfaces */
+body,
+.nav-header,
+.nav-bar,
+.flip-card-content,
+.problem-card,
+.engagement-card,
+.btn,
+.nav-cta,
+.icon-toggle,
+.divider,
+.faq-item,
+.card-tag,
+.site-footer {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
 
 html {
@@ -588,13 +621,13 @@ img {
 
 .btn-primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
   border: 1px solid var(--color-primary);
 }
 
 .btn-primary:hover {
-  background: #000;
-  border-color: #000;
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
 }
 
 .btn-secondary {
@@ -611,18 +644,50 @@ img {
 .nav-cta {
   font-size: 12px;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-on-primary);
   background: var(--color-primary);
   padding: 8px 16px;
   border-radius: 100px;
   text-decoration: none;
-  transition: background 0.2s ease;
   white-space: nowrap;
 }
 
 .nav-cta:hover {
-  background: #000;
+  background: var(--color-primary-hover);
   text-decoration: none;
+}
+
+/* --- Nav right group + toggles --- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  color: var(--color-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  height: 30px;
+  min-width: 30px;
+  padding: 0 9px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-toggle:hover {
+  color: var(--color-primary);
+  border-color: var(--color-tertiary);
+}
+
+#themeToggle {
+  font-size: 14px;
 }
 
 /* --- Hero CTAs --- */
@@ -939,6 +1004,10 @@ img {
 
   .nav-cta {
     display: none;
+  }
+
+  .nav-right {
+    gap: 10px;
   }
 
   .nav-toggle {
