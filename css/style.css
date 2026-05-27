@@ -379,7 +379,7 @@ img {
 /* --- Flip Card --- */
 .flip-card {
   perspective: 800px;
-  min-height: 180px;
+  height: 260px;
 }
 
 .flip-card-inner {
@@ -392,7 +392,8 @@ img {
   background: var(--color-surface);
   border-radius: 16px;
   padding: 28px;
-  min-height: 180px;
+  height: 100%;
+  overflow: hidden;
 }
 
 .card-title {
@@ -1148,6 +1149,12 @@ img {
 
   .flip-card-content {
     border: 1px solid var(--color-border);
+    height: auto;
+    overflow: visible;
+  }
+
+  .flip-card {
+    height: auto;
   }
 
   /* Show all projects statically in print */
