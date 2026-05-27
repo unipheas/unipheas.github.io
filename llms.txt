@@ -1,0 +1,50 @@
+# Brian Phillips — Fractional CTO & Technical Leadership
+
+> Brian Phillips is a Fractional CTO and engineering leader with 15+ years in
+> mobile and full-stack engineering. He steps into stalled, unstable, or
+> under-led engineering and gets products shipping reliably again, for startup
+> founders, SMBs, and enterprise teams. Work is fully remote.
+
+## What he does
+
+- **Fractional CTO**: Part-time executive ownership of engineering — direction, team, vendors, and delivery — for companies that need senior technical leadership but not a full-time hire.
+- **Delivery recovery**: Stabilizing and re-sequencing stalled or failing software projects until they ship predictably again.
+- **Vendor oversight**: Acting as the client's technical authority over agencies and offshore teams that are underdelivering.
+- **Architecture modernization**: Reworking systems that have become the bottleneck as a company scales.
+- **Technical advisory**: Ongoing senior guidance for founders and leaders on strategy, hiring, and architecture.
+
+## How he works
+
+His recovery approach is **assess, stabilize, strengthen**: get an honest read on
+the code, team, and vendors; stop the immediate problems so delivery resumes;
+then make the structural fixes once shipping is safe. He uses AI-assisted
+engineering workflows to move faster without lowering quality, and has led
+remote and distributed teams for most of his career.
+
+## Engagement models
+
+- **Technical Advisory** — monthly retainer
+- **Fractional CTO** — ongoing, part-time
+- **Architecture & Delivery Audit** — fixed scope, fixed fee
+- **Delivery Recovery** — scoped per engagement
+
+Engagements are structured as monthly retainers or fixed-scope projects rather
+than hourly billing. He takes on a small number of clients at a time.
+
+## Specialties
+
+Mobile and full-stack engineering (Swift, SwiftUI, UIKit, React Native), backend
+and cloud (AWS), CI/CD and release discipline, engineering leadership, team and
+vendor management, and technical strategy.
+
+## Selected experience
+
+Work for Tommy Car Wash Systems (consumer app and POS across 250+ locations,
+2M+ users), Nike, Amazon, Toyota, PepsiCo (Super Bowl halftime campaign), NAV
+Canada, IBM, and Rigetti. Maintainer of the open-source MAVSDK-Swift project.
+
+## Contact
+
+- Email: unipheas@protonmail.com
+- GitHub: https://github.com/unipheas
+- Website: https://unipheas.github.io/
