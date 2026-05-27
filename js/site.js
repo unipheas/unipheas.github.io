@@ -67,20 +67,20 @@
 
   // --- Split-Flap Card Cycling ---
   var projects = [
-    { name: "Tommy's Express POS", description: "Own the POS platform running across 250+ car wash locations — architecture, release discipline, and high-volume daily operations with payments and license plate recognition.", tags: ["Swift", "SwiftUI", "Stripe"], role: "Mobile Development Manager" },
-    { name: "Tommy Express App", description: "Lead the consumer mobile platform used by more than 2 million customers across iOS and Android.", tags: ["React Native"], role: "Mobile Development Manager" },
-    { name: "TCW FLEX POS", description: "Directed delivery of a new internal product supporting site rollouts and day-to-day belt management operations.", tags: ["Swift", "SwiftUI", "SPM"], role: "Senior iOS Engineer" },
-    { name: "Infinite Miner", description: "Built and now operate a live browser game end to end — procedural generation, progression loops, and ongoing updates via an AI-assisted workflow.", tags: ["Web App", "Game Dev"], role: "Co-Creator", url: "https://infiniteminer.com" },
-    { name: "MAVSDK-Swift", description: "Maintained the open-source Swift client for controlling autonomous drones over MAVLink, with a focus on reliability and developer usability.", tags: ["Swift", "RxSwift", "MAVLink"], role: "OSS Maintainer" },
+    { name: "Tommy's Express POS", description: "I run the POS platform behind 250+ car wash locations: payments, license plate recognition, and a lot of transactions a day.", tags: ["Swift", "SwiftUI", "Stripe"], role: "Mobile Development Manager" },
+    { name: "Tommy Express App", description: "I lead the consumer app, used by more than 2 million people on iOS and Android.", tags: ["React Native"], role: "Mobile Development Manager" },
+    { name: "TCW FLEX POS", description: "Built a new internal product for site rollouts and day-to-day belt management.", tags: ["Swift", "SwiftUI", "SPM"], role: "Senior iOS Engineer" },
+    { name: "Infinite Miner", description: "Built and still run this live browser game on my own, using an AI-assisted workflow.", tags: ["Web App", "Game Dev"], role: "Co-Creator", url: "https://infiniteminer.com" },
+    { name: "MAVSDK-Swift", description: "Maintained the open-source Swift client for flying autonomous drones over MAVLink.", tags: ["Swift", "RxSwift", "MAVLink"], role: "OSS Maintainer" },
     { name: "MotoCare", description: "iOS app for riders to track maintenance history, service intervals, and vehicle records.", tags: ["SwiftUI", "SwiftData"], role: "Creator" },
-    { name: "StreetBookies", description: "iOS app that helps homeschool families find neighborhood libraries and related learning resources.", tags: ["SwiftUI", "Firebase"], role: "Creator" },
-    { name: "Circle Check", description: "Led delivery of a GPS-powered safety inspection product for fleet operations, including work for NAV Canada.", tags: ["Swift", "GPS", "Maps"], role: "Lead Engineer" },
-    { name: "Corporate Tools", description: "Built the automation system that removed a core operational bottleneck and added more than $300K per week in revenue capacity.", tags: ["Node.js", "Puppeteer", "Rails"], role: "Software Engineer" },
+    { name: "StreetBookies", description: "iOS app that helps homeschool families find neighborhood libraries and learning resources.", tags: ["SwiftUI", "Firebase"], role: "Creator" },
+    { name: "Circle Check", description: "Led a GPS safety-inspection product for fleet operations, including work for NAV Canada.", tags: ["Swift", "GPS", "Maps"], role: "Lead Engineer" },
+    { name: "Corporate Tools", description: "Built the automation that cleared a bottleneck and freed up more than $300K a week in revenue.", tags: ["Node.js", "Puppeteer", "Rails"], role: "Software Engineer" },
     { name: "Corporate Phone", description: "Took a production iOS app from greenfield through launch with TDD, CI/CD, and release automation.", tags: ["Swift", "SPM", "CircleCI"], role: "iOS Engineer" },
-    { name: "Pepsi Halftime Show", description: "Shipped the interactive digital experience for PepsiCo and the NFL's Super Bowl halftime campaign under a fixed, very public deadline.", tags: ["Vue/Nuxt", "Animation"], role: "Frontend Developer" },
-    { name: "Nike / Amazon / Toyota", description: "Delivered AR and VR campaign work for global brands under tight deadlines and public launch pressure.", tags: ["AR/VR", "WebXR"], role: "Frontend Developer" },
-    { name: "QuickLoad", description: "Hackathon-winning logistics product that automated shipment assignment workflows in China's freight system.", tags: ["Swift", "UX Design"], role: "Hackathon Winner" },
-    { name: "Lucky English", description: "Designed and built a phonics app for children learning English while living and teaching in Asia.", tags: ["Swift", "EdTech"], role: "Creator" },
+    { name: "Pepsi Halftime Show", description: "Shipped the interactive experience for PepsiCo's NFL Super Bowl halftime campaign.", tags: ["Vue/Nuxt", "Animation"], role: "Frontend Developer" },
+    { name: "Nike / Amazon / Toyota", description: "Delivered AR and VR campaign work for global brands under tight, public deadlines.", tags: ["AR/VR", "WebXR"], role: "Frontend Developer" },
+    { name: "QuickLoad", description: "Hackathon-winning logistics product that automated shipment assignment in China's freight system.", tags: ["Swift", "UX Design"], role: "Hackathon Winner" },
+    { name: "Lucky English", description: "Designed and built a phonics app for kids learning English while I was teaching in Asia.", tags: ["Swift", "EdTech"], role: "Creator" },
     { name: "RipATrip", description: "Built the iOS app, backend API, and admin tooling for a travel product with GPS and REST integrations.", tags: ["Swift", "REST APIs"], role: "Full-Stack Developer" }
   ];
 
