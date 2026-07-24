@@ -74,4 +74,4 @@ project.
 
 - Email: brian.phillips@unipheas.com
 - GitHub: https://github.com/unipheas
-- Website: https://unipheas.com/
+- Website: https://unipheas.github.io/ (also reached through unipheas.com)
