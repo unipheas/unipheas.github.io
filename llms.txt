@@ -1,50 +1,77 @@
-# Brian Phillips — Fractional CTO & Technical Leadership
+# Brian Phillips — Autonomous CTO
 
-> Brian Phillips is a Fractional CTO and engineering leader with 15+ years in
-> mobile and full-stack engineering. He steps into stalled, unstable, or
-> under-led engineering and gets products shipping reliably again, for startup
-> founders, SMBs, and enterprise teams. Work is fully remote.
+> Brian Phillips turns stalled, agency-dependent software products into
+> client-owned engineering operations that ship reliably, observe themselves,
+> and keep running after the engagement ends. His Autonomous CTO system was
+> built and proven through the operating transformation at Let's Ride.
 
-## What he does
+## Who this is for
 
-- **Fractional CTO**: Part-time executive ownership of engineering — direction, team, vendors, and delivery — for companies that need senior technical leadership but not a full-time hire.
-- **Delivery recovery**: Stabilizing and re-sequencing stalled or failing software projects until they ship predictably again.
-- **Vendor oversight**: Acting as the client's technical authority over agencies and offshore teams that are underdelivering.
-- **Architecture modernization**: Reworking systems that have become the bottleneck as a company scales.
-- **Technical advisory**: Ongoing senior guidance for founders and leaders on strategy, hiring, and architecture.
+The strongest fit is a founder or operator with meaningful revenue or funding
+who is spending approximately $15,000–$30,000 per month on software delivery
+without reliable launches, operational visibility, or internal technical
+ownership.
 
-## How he works
+## The three-stage engagement
 
-His recovery approach is **assess, stabilize, strengthen**: get an honest read on
-the code, team, and vendors; stop the immediate problems so delivery resumes;
-then make the structural fixes once shipping is safe. He uses AI-assisted
-engineering workflows to move faster without lowering quality, and has led
-remote and distributed teams for most of his career.
+1. **Engineering Rescue Audit — $12,500 fixed fee, 2–3 weeks**
+   Establishes ground truth across the codebase, infrastructure, delivery
+   pipeline, vendor relationship, security, cost, and ownership. Deliverables
+   include an executive risk briefing, technical findings, and a prioritized
+   90-day roadmap with fixed-price options.
+2. **Foundation Build — $45,000–$75,000 fixed fee, 8–12 weeks**
+   Builds the client-controlled foundation for reliable delivery: architecture,
+   CI/CD, staging and production workflows, rollback, observability, security,
+   cost controls, and operational documentation.
+3. **Autonomous Operations — $4,000–$8,000 per month**
+   Installs and operates specialized engineering agents above the proven
+   foundation. The client owns the system. Brian supplies high-risk technical
+   judgment, fleet oversight, a weekly owner report, and ongoing steering.
 
-## Engagement models
+## Proven test bed: Let's Ride
 
-- **Technical Advisory** — monthly retainer
-- **Fractional CTO** — ongoing, part-time
-- **Architecture & Delivery Audit** — fixed scope, fixed fee
-- **Delivery Recovery** — scoped per engagement
+The operating model was developed through real CTO work at Let's Ride:
 
-Engagements are structured as monthly retainers or fixed-scope projects rather
-than hourly billing. He takes on a small number of clients at a time.
+- Previous agency run-rate: approximately $23,700 per month
+- Previous agency spend: more than $300,000 without a launch
+- Core infrastructure after the transformation: approximately $700–$1,500 per month
+- Operating-cost reduction in that engagement: more than 90%
+- Delivery model changed from a vendor black box to a client-owned system
+- Transformation timeline: approximately 16 weeks, part-time
 
-## Specialties
+These figures describe the Let's Ride engagement and are not a guarantee of
+identical results for every company.
 
-Mobile and full-stack engineering (Swift, SwiftUI, UIKit, React Native), backend
-and cloud (AWS), CI/CD and release discipline, engineering leadership, team and
-vendor management, and technical strategy.
+## Human-governed autonomy
 
-## Selected experience
+Agents may investigate, implement, test, review, report, and propose changes.
+Humans retain approval over:
 
-Work for Tommy Car Wash Systems (consumer app and POS across 250+ locations,
-2M+ users), Nike, Amazon, Toyota, PepsiCo (Super Bowl halftime campaign), NAV
-Canada, IBM, and Rigetti. Maintainer of the open-source MAVSDK-Swift project.
+- Payments, billing, authentication, and authorization
+- Production promotions and app-store releases
+- Data migrations and destructive production-data operations
+- Spending increases
+- Legal-adjacent changes
+
+The goal is zero human toil, not zero human judgment.
+
+## What the client owns
+
+Infrastructure, delivery workflows, agent routines, technical memory, accounts,
+and handoff documentation remain under client control. The exit package
+includes an owner's manual, operations runbook, developer onboarding guide,
+continuity checklist, and current access records.
+
+## Brian Phillips
+
+Brian has 15+ years across CTO leadership, mobile and full-stack engineering,
+infrastructure, software delivery, and vendor recovery. Selected experience
+includes Let's Ride, Tommy Car Wash Systems, Nike, Amazon, Toyota, PepsiCo,
+NAV Canada, IBM, and Rigetti. He maintained the open-source MAVSDK-Swift
+project.
 
 ## Contact
 
 - Email: brian.phillips@unipheas.com
 - GitHub: https://github.com/unipheas
-- Website: https://unipheas.github.io/
+- Website: https://unipheas.com/

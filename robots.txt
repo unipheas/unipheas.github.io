@@ -1,4 +1,4 @@
-# Brian Phillips — Fractional CTO & Technical Leadership
+# Brian Phillips — Autonomous CTO
 # Search and AI crawlers are welcome.
 
 User-agent: *
@@ -44,4 +44,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://unipheas.github.io/sitemap.xml
+Sitemap: https://unipheas.com/sitemap.xml

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Brian Phillips — Autonomous CTO</title>
+  <desc id="desc">Replace the agency. Keep the operation.</desc>
+  <rect width="1200" height="630" fill="#0a0a08"/>
+  <g stroke="#2d2c25" stroke-width="1" opacity=".7">
+    <path d="M80 0v630M160 0v630M240 0v630M320 0v630M400 0v630M480 0v630M560 0v630M640 0v630M720 0v630M800 0v630M880 0v630M960 0v630M1040 0v630M1120 0v630"/>
+  </g>
+  <rect x="74" y="68" width="52" height="52" fill="none" stroke="#4d8ee8"/>
+  <text x="100" y="101" fill="#4d8ee8" font-family="monospace" font-size="15" text-anchor="middle">BP</text>
+  <text x="148" y="89" fill="#f2f0e8" font-family="sans-serif" font-size="20" font-weight="700">Brian Phillips</text>
+  <text x="148" y="113" fill="#898679" font-family="monospace" font-size="12" letter-spacing="2">AUTONOMOUS CTO</text>
+  <text x="74" y="270" fill="#f2f0e8" font-family="sans-serif" font-size="70" font-weight="700" letter-spacing="-4">Replace the agency.</text>
+  <text x="74" y="350" fill="#f2f0e8" font-family="sans-serif" font-size="70" font-weight="700" letter-spacing="-4">Keep the operation.</text>
+  <text x="76" y="433" fill="#c5c1b3" font-family="sans-serif" font-size="24">A proven operating system for rescuing stalled software delivery.</text>
+  <rect x="76" y="505" width="244" height="52" fill="#4d8ee8"/>
+  <text x="198" y="538" fill="#07111f" font-family="monospace" font-size="14" font-weight="700" text-anchor="middle">ENGINEERING RESCUE AUDIT</text>
+  <text x="1124" y="543" fill="#898679" font-family="monospace" font-size="13" text-anchor="end">UNIPHEAS.COM</text>
+</svg>

@@ -4,488 +4,410 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
-    /* Set theme + language before paint to avoid a flash of the wrong state. */
     (function () {
       try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        var theme = localStorage.getItem('theme');
+        if (theme !== 'dark' && theme !== 'light') {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         }
-        document.documentElement.setAttribute('data-theme', t);
-        var l = localStorage.getItem('lang') === 'zh' ? 'zh' : 'en';
-        document.documentElement.setAttribute('lang', l === 'zh' ? 'zh-Hans' : 'en');
-      } catch (e) {}
+        document.documentElement.setAttribute('data-theme', theme);
+        var language = localStorage.getItem('lang') === 'zh' ? 'zh' : 'en';
+        document.documentElement.setAttribute('lang', language === 'zh' ? 'zh-Hans' : 'en');
+      } catch (error) {}
     })();
   </script>
-  <title>Brian Phillips — Fractional CTO &amp; Technical Leadership</title>
-  <meta name="description" content="Fractional CTO with 15+ years in mobile and full-stack engineering. I step into stalled or messy projects and get them shipping again, for founders, SMBs, and enterprise teams.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Brian Phillips — Fractional CTO &amp; Delivery Recovery">
-  <meta property="og:description" content="Senior technical leadership for products that have stalled. I steady delivery, sort out vendors, and get teams shipping again.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://unipheas.github.io">
-
-  <link rel="canonical" href="https://unipheas.github.io/">
+  <title>Brian Phillips — Autonomous CTO for Stalled Software Products</title>
+  <meta name="description" content="I replace expensive, unreliable software delivery with a client-owned autonomous engineering operation. Start with a fixed-fee Engineering Rescue Audit.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a08">
 
-  <!-- Favicon -->
+  <meta property="og:title" content="Brian Phillips — Autonomous CTO">
+  <meta property="og:description" content="From agency dependency to a client-owned engineering operation that ships, observes, and documents itself.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unipheas.com/">
+  <meta property="og:image" content="https://unipheas.com/img/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brian Phillips — Autonomous CTO">
+  <meta name="twitter:description" content="A proven operating system for rescuing stalled software delivery.">
+  <meta name="twitter:image" content="https://unipheas.com/img/social-card.png">
+
+  <link rel="canonical" href="https://unipheas.com/">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
-  <!-- Structured data for search and AI engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://unipheas.github.io/#brian",
+        "@id": "https://unipheas.com/#brian",
         "name": "Brian Phillips",
-        "jobTitle": "Fractional CTO",
+        "jobTitle": "Autonomous CTO",
         "email": "mailto:brian.phillips@unipheas.com",
-        "url": "https://unipheas.github.io/",
+        "url": "https://unipheas.com/",
         "sameAs": ["https://github.com/unipheas"],
-        "description": "Fractional CTO and engineering leader with 15+ years in mobile and full-stack engineering, specializing in stabilizing failing products, recovering stalled initiatives, and leading teams and vendors to reliable delivery.",
-        "knowsAbout": ["Fractional CTO leadership", "Mobile architecture", "Engineering leadership", "Software delivery recovery", "Interim CTO", "Technical strategy", "Vendor management", "Engineering team scaling", "CI/CD", "Release management", "Swift", "SwiftUI", "UIKit", "React Native", "AWS", "Backend integration"]
+        "description": "Technology executive specializing in software delivery rescue, autonomous engineering operations, mobile and full-stack architecture, and human-governed AI delivery systems."
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://unipheas.github.io/#service",
-        "name": "Brian Phillips — Fractional CTO & Technical Leadership",
-        "url": "https://unipheas.github.io/",
-        "image": "https://unipheas.github.io/img/uploads/headshot.jpg",
-        "founder": {"@id": "https://unipheas.github.io/#brian"},
-        "provider": {"@id": "https://unipheas.github.io/#brian"},
+        "@id": "https://unipheas.com/#service",
+        "name": "Brian Phillips — Autonomous CTO",
+        "url": "https://unipheas.com/",
+        "founder": {"@id": "https://unipheas.com/#brian"},
+        "provider": {"@id": "https://unipheas.com/#brian"},
         "areaServed": {"@type": "Place", "name": "Worldwide (remote)"},
-        "serviceType": ["Fractional CTO", "Technical advisory", "Architecture and delivery audit", "Software delivery recovery", "Interim engineering leadership"],
-        "description": "Fractional CTO and technical leadership for founders, SMBs, and enterprise teams: stabilizing failing products, recovering stalled initiatives, taking over underperforming vendors, modernizing architecture, and restoring reliable delivery.",
+        "serviceType": ["Engineering Rescue Audit", "Foundation Build", "Autonomous Operations", "Fractional CTO"],
+        "description": "A three-stage service that diagnoses stalled software delivery, rebuilds the foundation, and installs a client-owned autonomous engineering operation.",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Engagement models",
+          "name": "Autonomous CTO engagements",
           "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Technical Advisory", "description": "Monthly retainer for ongoing senior technical guidance: strategy, hiring, and architecture."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fractional CTO", "description": "Part-time executive ownership of engineering: direction, team, vendors, and delivery."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Architecture & Delivery Audit", "description": "Fixed-scope assessment of your product, codebase, team, and pipeline with a prioritized plan."}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Delivery Recovery", "description": "Scoped engagement to get a stalled or failing initiative shipping again."}}
+            {"@type": "Offer", "price": "12500", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Engineering Rescue Audit"}},
+            {"@type": "Offer", "lowPrice": "45000", "highPrice": "75000", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Foundation Build"}},
+            {"@type": "Offer", "lowPrice": "4000", "highPrice": "8000", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Autonomous Operations"}}
           ]
         }
       },
       {
         "@type": "WebSite",
-        "@id": "https://unipheas.github.io/#website",
-        "url": "https://unipheas.github.io/",
-        "name": "Brian Phillips — Fractional CTO",
-        "publisher": {"@id": "https://unipheas.github.io/#brian"}
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://unipheas.github.io/#faq",
-        "mainEntity": [
-          {"@type": "Question", "name": "What is a fractional CTO?", "acceptedAnswer": {"@type": "Answer", "text": "A fractional CTO is an experienced technical leader who runs your engineering part-time instead of as a full-time hire. You get someone to own technical strategy, lead the team and any vendors, and stay accountable for delivery, for a fraction of the cost and commitment of a full-time executive."}},
-          {"@type": "Question", "name": "When should a company hire a fractional CTO?", "acceptedAnswer": {"@type": "Answer", "text": "It usually makes sense when you need senior technical leadership but can't justify a full-time CTO yet: an early-stage startup, a founder without a technical co-founder, or a company whose product has stalled and needs someone to take ownership. If decisions are stuck because nobody owns the technical call, it's time."}},
-          {"@type": "Question", "name": "What is the difference between a fractional CTO and a full-time CTO?", "acceptedAnswer": {"@type": "Answer", "text": "The work is the same; the commitment isn't. A fractional CTO gives you the same strategy, leadership, and accountability a full-time CTO would, but part-time and on a flexible arrangement. It fits until the company is big enough that the role needs someone in the seat every day."}},
-          {"@type": "Question", "name": "How do you fix a stalled or failing software project?", "acceptedAnswer": {"@type": "Answer", "text": "I start by getting an honest read on the code, the team, and any vendors, then stop the immediate problems so things start shipping again. The bigger architecture and process fixes come after, once delivery is stable. I think of it as assess, stabilize, strengthen."}},
-          {"@type": "Question", "name": "Can you take over an underperforming development agency or offshore team?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A lot of my work is stepping in as the client's technical authority when an agency or offshore team isn't delivering: reviewing what they've built, setting clear standards and a real schedule, and holding them to it, or helping you move on if that's the better call."}},
-          {"@type": "Question", "name": "How much does a fractional CTO cost and how are engagements priced?", "acceptedAnswer": {"@type": "Answer", "text": "Engagements are set up as monthly retainers or fixed-scope projects rather than hourly billing. The audit is a fixed fee, advisory and fractional CTO work are monthly, and recovery projects are scoped to the situation. I take on a small number of clients at a time."}},
-          {"@type": "Question", "name": "What kind of companies and stages do you work with?", "acceptedAnswer": {"@type": "Answer", "text": "Startup founders, small and mid-sized businesses, and enterprise teams, often ones under pressure from a stalled product, an unstable codebase, or a vendor that isn't working out. I've worked across both large enterprise initiatives and early-stage startups."}},
-          {"@type": "Question", "name": "Do you work remotely?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I've led remote and distributed teams for most of my career, coordinating engineers and vendors across time zones. Remote is the default in how I work, and the habits that come with it tend to keep delivery on track."}},
-          {"@type": "Question", "name": "What technologies do you specialize in?", "acceptedAnswer": {"@type": "Answer", "text": "My background is mobile and full-stack engineering: Swift, SwiftUI, UIKit, and React Native on mobile, plus backend and cloud work on AWS. Beyond specific tools, the focus is architecture, CI/CD, release discipline, and the technical strategy that ties engineering to the business."}}
-        ]
+        "@id": "https://unipheas.com/#website",
+        "url": "https://unipheas.com/",
+        "name": "Brian Phillips — Autonomous CTO",
+        "publisher": {"@id": "https://unipheas.com/#brian"}
       }
     ]
   }
   </script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Navigation -->
-  <header class="nav-header" role="banner">
-    <nav class="nav-bar" role="navigation" aria-label="Main navigation">
-      <div class="nav-inner">
-        <a href="#" class="nav-logo">Brian Phillips</a>
-        <div class="nav-right">
-          <ul class="nav-links">
-            <li><a href="#fractional" data-i18n="nav.fractional">Fractional CTO</a></li>
-            <li><a href="#problems" data-i18n="nav.problems">What I Solve</a></li>
-            <li><a href="#engagement" data-i18n="nav.engagement">Engagement</a></li>
-            <li><a href="#results" data-i18n="nav.results">Results</a></li>
-            <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-            <li><a href="#about" data-i18n="nav.about">About</a></li>
-          </ul>
-          <button class="icon-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"></button>
-          <button class="icon-toggle" id="langToggle" type="button" aria-label="切换到中文 / Switch language">中文</button>
-          <a href="#contact" class="nav-cta" data-i18n="nav.cta">Get in touch</a>
-          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span class="nav-toggle-icon"></span>
-          </button>
-        </div>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Brian Phillips, home">
+        <span class="brand-mark" aria-hidden="true">BP</span>
+        <span class="brand-copy">
+          <strong>Brian Phillips</strong>
+          <span data-i18n="brand.role">Autonomous CTO</span>
+        </span>
+      </a>
+
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="#proof" data-i18n="nav.proof">Proof</a></li>
+          <li><a href="#system" data-i18n="nav.system">The system</a></li>
+          <li><a href="#engagement" data-i18n="nav.engagement">Engagement</a></li>
+          <li><a href="#guardrails" data-i18n="nav.guardrails">Guardrails</a></li>
+        </ul>
+        <button class="utility-button" id="themeToggle" type="button" aria-label="Switch color theme">
+          <span aria-hidden="true">◐</span>
+        </button>
+        <button class="utility-button language-toggle" id="langToggle" type="button" aria-label="切换到中文 / Switch language">中文</button>
+        <a class="nav-cta" href="#contact" data-i18n="nav.cta">Start with the audit</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span>
+        </button>
       </div>
     </nav>
-    <!-- Mobile dropdown -->
-    <div class="mobile-nav" aria-hidden="true">
-      <ul class="mobile-nav-links">
-        <li><a href="#fractional" data-i18n="nav.fractional">Fractional CTO</a></li>
-        <li><a href="#problems" data-i18n="nav.problems">What I Solve</a></li>
-        <li><a href="#engagement" data-i18n="nav.engagement">Engagement</a></li>
-        <li><a href="#results" data-i18n="nav.results">Results</a></li>
-        <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#contact" data-i18n="nav.cta">Get in touch</a></li>
-      </ul>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#proof" data-i18n="nav.proof">Proof</a>
+      <a href="#system" data-i18n="nav.system">The system</a>
+      <a href="#engagement" data-i18n="nav.engagement">Engagement</a>
+      <a href="#guardrails" data-i18n="nav.guardrails">Guardrails</a>
+      <a href="#contact" data-i18n="nav.cta">Start with the audit</a>
     </div>
   </header>
 
-  <main role="main">
-
-    <!-- Hero -->
-    <section class="hero" aria-label="Introduction">
-      <div class="container hero-content">
-        <p class="hero-label" data-i18n="hero.label">Fractional CTO &amp; Engineering Leadership</p>
-        <h1 class="hero-headline" data-i18n="hero.headline">I'm the CTO you bring in when delivery has stalled.</h1>
-        <p class="hero-subline" data-i18n="hero.subline">Fifteen years leading mobile and full-stack engineering, mostly as the person who walks into a stuck or messy project and gets it shipping again. Founders and operators hire me to steady the product, deal with a vendor that isn't working out, and give the team a clear technical call to follow.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary" data-i18n="cta.intro">Book an intro call</a>
-          <a href="#engagement" class="btn btn-secondary" data-i18n="hero.cta2">Ways to work together</a>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Autonomous CTO · Delivery rescue</span></p>
+          <h1 id="hero-title" data-i18n="hero.title">Replace the agency. Keep the operation.</h1>
+          <p class="hero-lede" data-i18n="hero.lede">I turn stalled, agency-dependent software into a client-owned engineering operation that ships reliably, watches itself, and keeps running after I leave.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact" data-i18n="hero.primary">Start with a $12,500 audit</a>
+            <a class="button button-secondary" href="#proof" data-i18n="hero.secondary">See the real test bed</a>
+          </div>
+          <p class="hero-note" data-i18n="hero.note">For founders and operators spending $15K–$30K/month without dependable delivery.</p>
         </div>
+
+        <aside class="system-console" aria-label="Autonomous engineering operating model">
+          <div class="console-header">
+            <span data-i18n="console.title">OPERATING STATE</span>
+            <span class="console-live"><i></i><span data-i18n="console.live">HUMAN GOVERNED</span></span>
+          </div>
+          <div class="console-mark">
+            <img src="img/autonomous-cto-mark.jpg" width="1200" height="1200" alt="Autonomous CTO network mark: a governed system of connected nodes in orbit">
+            <span class="mark-label mark-label-human" data-i18n="console.human">HUMAN GATE</span>
+            <span class="mark-label mark-label-system" data-i18n="console.system">OPERATING SYSTEM</span>
+          </div>
+          <dl class="console-stats">
+            <div><dt data-i18n="console.stat1">Low-risk work</dt><dd data-i18n="console.stat1v">Automated</dd></div>
+            <div><dt data-i18n="console.stat2">Production</dt><dd data-i18n="console.stat2v">Human approved</dd></div>
+            <div><dt data-i18n="console.stat3">Ownership</dt><dd data-i18n="console.stat3v">100% client</dd></div>
+          </dl>
+        </aside>
       </div>
     </section>
 
-    <!-- Credibility band -->
-    <section class="cred-band" aria-label="Selected experience">
-      <div class="container-wide">
-        <p class="cred-label" data-i18n="cred.label">Work for</p>
-        <p class="cred-names">Tommy Car Wash Systems · Nike · Amazon · Toyota · PepsiCo · NAV Canada</p>
+    <section class="trust-strip" aria-label="Selected experience">
+      <p data-i18n="trust.label">Built in the real world. Trusted across:</p>
+      <ul>
+        <li>Let’s Ride</li><li>Tommy Car Wash Systems</li><li>Nike</li><li>Amazon</li><li>PepsiCo</li><li>NAV Canada</li>
+      </ul>
+    </section>
+
+    <section class="section problem-section" aria-labelledby="problem-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow" data-i18n="problem.eyebrow">The expensive failure mode</p>
+          <h2 id="problem-title" data-i18n="problem.title">You should not need another agency to understand the agency.</h2>
+        </div>
+        <p data-i18n="problem.lede">When delivery is opaque, every month buys more dependency: undocumented systems, fragile releases, and decisions nobody inside the company can confidently make.</p>
+      </div>
+      <div class="signal-list">
+        <article>
+          <span>01</span>
+          <h3 data-i18n="problem.p1t">Money leaves. Software does not.</h3>
+          <p data-i18n="problem.p1d">Five-figure invoices continue while launch dates move and the backlog grows.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-i18n="problem.p2t">The vendor owns the truth.</h3>
+          <p data-i18n="problem.p2d">Leadership cannot see actual progress, risk, or what it would take to change teams.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-i18n="problem.p3t">Every release is a special event.</h3>
+          <p data-i18n="problem.p3d">Testing is manual, rollback is uncertain, and a small change can become an incident.</p>
+        </article>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <!-- Fractional CTO -->
-    <section id="fractional" class="section" aria-label="Fractional CTO">
-      <div class="container">
-        <p class="section-label" data-i18n="fractional.label">Fractional CTO</p>
-        <h2 class="section-title" data-i18n="fractional.title">You don't always need a full-time CTO.</h2>
-        <div class="fcto-content animate-on-scroll">
-          <p class="fcto-lead" data-i18n="fractional.lead">Plenty of companies need real technical leadership long before they can justify a full-time executive. That gap is what I fill.</p>
-          <p class="fcto-body" data-i18n="fractional.body">I make the hard calls, keep the team and any outside vendors honest, and stay on the hook for whether the product actually ships. I set direction, decide what to build versus buy, run planning, and tell leadership the truth about where things stand. When it helps, I get into the code myself. The goal is always to leave the team able to run without me.</p>
+    <section class="section proof-section" id="proof" aria-labelledby="proof-title">
+      <div class="case-header">
+        <div>
+          <p class="eyebrow" data-i18n="proof.eyebrow">The test bed · Let’s Ride</p>
+          <h2 id="proof-title" data-i18n="proof.title">From agency hostage to owner-operated.</h2>
         </div>
-        <ul class="fcto-points">
-          <li class="animate-on-scroll"><span class="fcto-point-title" data-i18n="fractional.p1.t">Direction</span><span class="fcto-point-desc" data-i18n="fractional.p1.d">Strategy, the roadmap, platform choices, and the call on what to build versus buy.</span></li>
-          <li class="animate-on-scroll"><span class="fcto-point-title" data-i18n="fractional.p2.t">Teams &amp; vendors</span><span class="fcto-point-desc" data-i18n="fractional.p2.d">I hold your engineers and any outside agencies to a real standard and a real schedule.</span></li>
-          <li class="animate-on-scroll"><span class="fcto-point-title" data-i18n="fractional.p3.t">Accountability</span><span class="fcto-point-desc" data-i18n="fractional.p3.d">I own the outcome. If the product doesn't ship, that's on me too, not just on a report I handed over.</span></li>
-          <li class="animate-on-scroll"><span class="fcto-point-title" data-i18n="fractional.p4.t">Translation</span><span class="fcto-point-desc" data-i18n="fractional.p4.d">I keep leadership and engineering speaking the same language about what's actually possible.</span></li>
-        </ul>
+        <div class="case-stamp">
+          <span data-i18n="proof.stampTop">REAL ENGAGEMENT</span>
+          <strong data-i18n="proof.stampMain">16 WEEKS</strong>
+          <span data-i18n="proof.stampBottom">PART-TIME</span>
+        </div>
+      </div>
+
+      <div class="case-metrics">
+        <article>
+          <p class="metric-before">$23.7K/mo</p>
+          <p class="metric-after">$700–$1.5K/mo</p>
+          <span data-i18n="proof.m1">Agency run-rate → core infrastructure</span>
+        </article>
+        <article>
+          <p class="metric-before">$300K+</p>
+          <p class="metric-after">&gt;90%</p>
+          <span data-i18n="proof.m2">Spent without launch → operating-cost reduction</span>
+        </article>
+        <article>
+          <p class="metric-before" data-i18n="proof.m3b">Vendor black box</p>
+          <p class="metric-after" data-i18n="proof.m3a">Client-owned system</p>
+          <span data-i18n="proof.m3">Code, cloud, deployment, memory, and runbooks</span>
+        </article>
+      </div>
+
+      <div class="case-narrative">
+        <div class="case-rail" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <ol>
+          <li>
+            <span class="case-number">01</span>
+            <div><h3 data-i18n="proof.s1t">Establish ground truth</h3><p data-i18n="proof.s1d">Audited the code, infrastructure, vendor relationship, delivery process, and operational risk before changing the system.</p></div>
+          </li>
+          <li>
+            <span class="case-number">02</span>
+            <div><h3 data-i18n="proof.s2t">Rebuild the foundation</h3><p data-i18n="proof.s2d">Consolidated architecture, put accounts under company control, and made repeatable staging, production, and rollback normal.</p></div>
+          </li>
+          <li>
+            <span class="case-number">03</span>
+            <div><h3 data-i18n="proof.s3t">Instrument delivery</h3><p data-i18n="proof.s3d">Added CI/CD, error visibility, cost controls, release gates, and documentation that tells an operator what is actually happening.</p></div>
+          </li>
+          <li>
+            <span class="case-number">04</span>
+            <div><h3 data-i18n="proof.s4t">Install governed autonomy</h3><p data-i18n="proof.s4d">Deployed specialized agents for maintenance, review, security, reporting, and fleet supervision—with high-risk decisions reserved for humans.</p></div>
+          </li>
+        </ol>
+      </div>
+
+      <p class="case-disclosure" data-i18n="proof.disclosure">The figures above come from the operating model built for Let’s Ride. They describe that engagement, not a guarantee of identical results for every company.</p>
+    </section>
+
+    <section class="section system-section" id="system" aria-labelledby="system-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow" data-i18n="system.eyebrow">The autonomous engineering operation</p>
+          <h2 id="system-title" data-i18n="system.title">Automation handles toil. Humans keep judgment.</h2>
+        </div>
+        <p data-i18n="system.lede">This is not a chatbot bolted onto a broken team. It is an operating system: shared technical memory, repeatable infrastructure, observable delivery, specialized agents, and hard approval boundaries.</p>
+      </div>
+
+      <div class="maturity-ladder">
+        <article><span>00</span><div><h3 data-i18n="system.l0t">Artisanal</h3><p data-i18n="system.l0d">Knowledge lives in people. Releases depend on heroics.</p></div></article>
+        <article><span>01</span><div><h3 data-i18n="system.l1t">Repeatable</h3><p data-i18n="system.l1d">The path to production is documented and reproducible.</p></div></article>
+        <article><span>02</span><div><h3 data-i18n="system.l2t">Instrumented</h3><p data-i18n="system.l2d">Errors, cost, delivery, and risk are visible.</p></div></article>
+        <article><span>03</span><div><h3 data-i18n="system.l3t">Automated</h3><p data-i18n="system.l3d">Low-risk work moves from issue to reviewed change.</p></div></article>
+        <article class="active"><span>04</span><div><h3 data-i18n="system.l4t">Reflexive</h3><p data-i18n="system.l4d">The operation detects, proposes, verifies, and safely idles.</p></div></article>
+        <article><span>05</span><div><h3 data-i18n="system.l5t">Directed</h3><p data-i18n="system.l5d">Human intent steers an observable agent fleet.</p></div></article>
+      </div>
+
+      <div class="system-detail">
+        <div class="system-index">SYSTEM / 01–06</div>
+        <dl>
+          <div><dt data-i18n="system.d1t">Technical brain</dt><dd data-i18n="system.d1d">A durable decision record, company context, architecture, conventions, and current priorities.</dd></div>
+          <div><dt data-i18n="system.d2t">Delivery pipeline</dt><dd data-i18n="system.d2d">Tested, staged, reviewable changes with explicit promotion and rollback paths.</dd></div>
+          <div><dt data-i18n="system.d3t">Agent fleet</dt><dd data-i18n="system.d3d">Purpose-built routines for fixes, issues, review, security, reporting, supervision, and cleanup.</dd></div>
+          <div><dt data-i18n="system.d4t">Observability</dt><dd data-i18n="system.d4d">Uptime, errors, spend, deployment health, and fleet performance become operating signals.</dd></div>
+          <div><dt data-i18n="system.d5t">Owner interface</dt><dd data-i18n="system.d5d">A weekly plain-English report separates what shipped, what is healthy, and what needs a decision.</dd></div>
+          <div><dt data-i18n="system.d6t">Exit package</dt><dd data-i18n="system.d6d">Owner’s manual, operations runbook, onboarding guide, continuity checklist, and client-controlled access.</dd></div>
+        </dl>
       </div>
     </section>
 
-    <div class="divider"></div>
+    <section class="section engagement-section" id="engagement" aria-labelledby="engagement-title">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="engagement.eyebrow">One path, three stages</p>
+        <h2 id="engagement-title" data-i18n="engagement.title">Diagnose first. Build from evidence. Operate what works.</h2>
+      </div>
 
-    <!-- Problems I Solve -->
-    <section id="problems" class="section" aria-label="Problems I Solve">
-      <div class="container-wide">
-        <p class="section-label" data-i18n="problems.label">What I Solve</p>
-        <h2 class="section-title" data-i18n="problems.title">Most people call me when something is already on fire.</h2>
+      <div class="offer-stack">
+        <article class="offer featured">
+          <div class="offer-topline"><span>01</span><span data-i18n="engagement.o1tag">THE ENTRY POINT</span></div>
+          <h3 data-i18n="engagement.o1t">Engineering Rescue Audit</h3>
+          <p class="offer-price">$12,500 <small data-i18n="engagement.fixed">fixed fee</small></p>
+          <p data-i18n="engagement.o1d">Two to three weeks to establish ground truth: code, cloud, delivery, vendor risk, security, and ownership.</p>
+          <ul>
+            <li data-i18n="engagement.o1b1">Executive risk briefing</li>
+            <li data-i18n="engagement.o1b2">Technical and delivery findings</li>
+            <li data-i18n="engagement.o1b3">Prioritized 90-day roadmap</li>
+            <li data-i18n="engagement.o1b4">Fixed-price options for what comes next</li>
+          </ul>
+          <a href="#contact" class="text-link" data-i18n="engagement.o1cta">Request the audit <span aria-hidden="true">↗</span></a>
+        </article>
 
-        <div class="problems-grid">
-          <div class="problem-card animate-on-scroll">
-            <h3 class="problem-title" data-i18n="problems.c1.t">Delivery has stalled</h3>
-            <p class="problem-body" data-i18n="problems.c1.d">Deadlines keep slipping and nobody can explain why. Confidence inside and outside the team is gone. I find the real bottleneck and get things moving again.</p>
-          </div>
-          <div class="problem-card animate-on-scroll">
-            <h3 class="problem-title" data-i18n="problems.c2.t">The vendor isn't delivering</h3>
-            <p class="problem-body" data-i18n="problems.c2.d">You're paying an agency or an offshore team and you've lost visibility into what they're actually doing. I step in on your side and hold them to it.</p>
-          </div>
-          <div class="problem-card animate-on-scroll">
-            <h3 class="problem-title" data-i18n="problems.c3.t">The product is unstable</h3>
-            <p class="problem-body" data-i18n="problems.c3.d">Releases keep breaking and every change feels like a gamble. I get the thing stable so shipping stops being a coin flip.</p>
-          </div>
-          <div class="problem-card animate-on-scroll">
-            <h3 class="problem-title" data-i18n="problems.c4.t">No senior technical voice</h3>
-            <p class="problem-body" data-i18n="problems.c4.d">Decisions stall because nobody owns the technical call. I give your team, and your board, someone whose judgment they can trust.</p>
-          </div>
-          <div class="problem-card animate-on-scroll">
-            <h3 class="problem-title" data-i18n="problems.c5.t">Scaling is breaking things</h3>
-            <p class="problem-body" data-i18n="problems.c5.d">What worked when you were small is now the thing slowing you down. I rework the architecture so growth stops costing you sleep.</p>
-          </div>
-          <div class="problem-card animate-on-scroll">
-            <h3 class="problem-title" data-i18n="problems.c6.t">Engineering and the business have drifted apart</h3>
-            <p class="problem-body" data-i18n="problems.c6.d">The roadmap says one thing and the codebase is doing another. I get the two pointed back in the same direction so the work pays off.</p>
-          </div>
-        </div>
+        <article class="offer">
+          <div class="offer-topline"><span>02</span><span data-i18n="engagement.o2tag">8–12 WEEKS</span></div>
+          <h3 data-i18n="engagement.o2t">Foundation Build</h3>
+          <p class="offer-price">$45K–$75K <small data-i18n="engagement.fixed">fixed fee</small></p>
+          <p data-i18n="engagement.o2d">Rebuild the parts that make reliable delivery possible: ownership, architecture, CI/CD, observability, security, and operational memory.</p>
+          <ul>
+            <li data-i18n="engagement.o2b1">Client-controlled infrastructure</li>
+            <li data-i18n="engagement.o2b2">Repeatable staging and production</li>
+            <li data-i18n="engagement.o2b3">Monitoring, rollback, and cost controls</li>
+            <li data-i18n="engagement.o2b4">Documented operating foundation</li>
+          </ul>
+        </article>
+
+        <article class="offer">
+          <div class="offer-topline"><span>03</span><span data-i18n="engagement.o3tag">ONGOING</span></div>
+          <h3 data-i18n="engagement.o3t">Autonomous Operations</h3>
+          <p class="offer-price">$4K–$8K<small data-i18n="engagement.month">/month</small></p>
+          <p data-i18n="engagement.o3d">Install and operate the agent fleet above a proven foundation. You keep the system; my judgment remains attached while it creates value.</p>
+          <ul>
+            <li data-i18n="engagement.o3b1">Specialized maintenance and review agents</li>
+            <li data-i18n="engagement.o3b2">Weekly owner report and steering call</li>
+            <li data-i18n="engagement.o3b3">Human approval for high-risk work</li>
+            <li data-i18n="engagement.o3b4">Continuously current exit documentation</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <!-- Technical Leadership & Recovery -->
-    <section id="recovery" class="section" aria-label="Technical Leadership and Recovery">
-      <div class="container">
-        <p class="section-label" data-i18n="recovery.label">Leadership &amp; Recovery</p>
-        <h2 class="section-title" data-i18n="recovery.title">I steady things before I change them.</h2>
-        <p class="recovery-lead animate-on-scroll" data-i18n="recovery.lead">The reflex when you walk into a mess is to start rewriting. I don't. First I get an honest picture of what's going on and stop the immediate bleeding. The bigger structural fixes come after, once shipping is safe again.</p>
-
-        <div class="recovery-steps">
-          <div class="recovery-step animate-on-scroll">
-            <span class="recovery-step-num">01</span>
-            <h3 class="recovery-step-title" data-i18n="recovery.s1.t">Assess</h3>
-            <p class="recovery-step-body" data-i18n="recovery.s1.d">A straight read on the code, the team, and whatever vendors are involved. What's actually broken, what's about to break, and what to deal with first.</p>
-          </div>
-          <div class="recovery-step animate-on-scroll">
-            <span class="recovery-step-num">02</span>
-            <h3 class="recovery-step-title" data-i18n="recovery.s2.t">Stabilize</h3>
-            <p class="recovery-step-body" data-i18n="recovery.s2.d">Get releases under control and reorder the work so the things that matter ship first, and ship on time.</p>
-          </div>
-          <div class="recovery-step animate-on-scroll">
-            <span class="recovery-step-num">03</span>
-            <h3 class="recovery-step-title" data-i18n="recovery.s3.t">Strengthen</h3>
-            <p class="recovery-step-body" data-i18n="recovery.s3.d">Clean up the architecture, raise the bar on how the team works, and make sure none of it falls over after I leave.</p>
-          </div>
-        </div>
+    <section class="section guardrail-section" id="guardrails" aria-labelledby="guardrail-title">
+      <div class="guardrail-intro">
+        <p class="eyebrow" data-i18n="guardrails.eyebrow">The human boundary</p>
+        <h2 id="guardrail-title" data-i18n="guardrails.title">Zero human toil is the goal. Zero human judgment is not.</h2>
+        <p data-i18n="guardrails.lede">Agents may investigate, implement, test, and propose. They do not get unilateral authority over the decisions that can hurt the company.</p>
+      </div>
+      <div class="guardrail-list">
+        <article><span>LOCK / 01</span><h3 data-i18n="guardrails.g1t">Money and identity</h3><p data-i18n="guardrails.g1d">Payments, billing, authentication, and authorization always receive human review.</p></article>
+        <article><span>LOCK / 02</span><h3 data-i18n="guardrails.g2t">Production</h3><p data-i18n="guardrails.g2d">Production promotions and app-store releases remain deliberate human actions.</p></article>
+        <article><span>LOCK / 03</span><h3 data-i18n="guardrails.g3t">Data</h3><p data-i18n="guardrails.g3d">Destructive migrations and production-data deletion are never autonomous.</p></article>
+        <article><span>LOCK / 04</span><h3 data-i18n="guardrails.g4t">Spend and legal</h3><p data-i18n="guardrails.g4d">Run-rate increases and legal-adjacent changes stop for owner approval.</p></article>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <!-- Engagement Models -->
-    <section id="engagement" class="section" aria-label="Engagement Models">
-      <div class="container-wide">
-        <p class="section-label" data-i18n="engagement.label">Engagement</p>
-        <h2 class="section-title" data-i18n="engagement.title">A few ways to work together.</h2>
-
-        <div class="engagement-grid">
-          <div class="engagement-card animate-on-scroll">
-            <h3 class="engagement-title" data-i18n="engagement.c1.t">Technical Advisory</h3>
-            <p class="engagement-meta" data-i18n="engagement.c1.m">Monthly retainer</p>
-            <p class="engagement-body" data-i18n="engagement.c1.d">Someone experienced on call for the big decisions: strategy, hiring, architecture, the things you don't want to get wrong. We talk regularly and I'm there when something comes up.</p>
-          </div>
-          <div class="engagement-card animate-on-scroll">
-            <h3 class="engagement-title" data-i18n="engagement.c2.t">Fractional CTO</h3>
-            <p class="engagement-meta" data-i18n="engagement.c2.m">Ongoing · part-time</p>
-            <p class="engagement-body" data-i18n="engagement.c2.d">I run your engineering part-time and own the result: direction, the team, vendors, delivery. For when you need a real technical lead but can't justify a full-time one yet.</p>
-          </div>
-          <div class="engagement-card animate-on-scroll">
-            <h3 class="engagement-title" data-i18n="engagement.c3.t">Architecture &amp; Delivery Audit</h3>
-            <p class="engagement-meta" data-i18n="engagement.c3.m">Fixed scope · fixed fee</p>
-            <p class="engagement-body" data-i18n="engagement.c3.d">I dig into your product, your code, and how the team ships, then hand you a plain-English report and a prioritized list of what to fix. The quickest way to find out where you really stand.</p>
-          </div>
-          <div class="engagement-card animate-on-scroll">
-            <h3 class="engagement-title" data-i18n="engagement.c4.t">Delivery Recovery</h3>
-            <p class="engagement-meta" data-i18n="engagement.c4.m">Scoped engagement</p>
-            <p class="engagement-body" data-i18n="engagement.c4.d">A focused push to get a stalled or failing project shipping again, with me on the hook for the result.</p>
-          </div>
+    <section class="section credibility-section" aria-labelledby="credibility-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow" data-i18n="credibility.eyebrow">Operator, not theorist</p>
+          <h2 id="credibility-title" data-i18n="credibility.title">The system is new. The judgment behind it is not.</h2>
         </div>
-        <p class="engagement-note animate-on-scroll" data-i18n="engagement.note">Most of this runs as a monthly retainer or a fixed-scope project. I only take on a few clients at once so I can stay close to the actual work.</p>
+        <p data-i18n="credibility.lede">Fifteen-plus years across CTO leadership, mobile, full-stack, infrastructure, agency delivery, and products where failure is visible immediately.</p>
+      </div>
+      <div class="credibility-grid">
+        <article><strong>2M+</strong><span data-i18n="credibility.c1">users on a consumer mobile platform</span></article>
+        <article><strong>250+</strong><span data-i18n="credibility.c2">locations on a transaction-critical POS platform</span></article>
+        <article><strong>$300K</strong><span data-i18n="credibility.c3">weekly capacity unlocked through automation</span></article>
+        <article><strong data-i18n="credibility.c4n">SUPER BOWL</strong><span data-i18n="credibility.c4">delivery on a deadline that could not move</span></article>
+      </div>
+      <div class="about-line">
+        <p data-i18n="credibility.about">I’m Brian Phillips. I have led teams, taken over vendor failures, built products from zero, maintained open-source drone software, and shipped for companies from early-stage startups to Nike, Amazon, Toyota, PepsiCo, and NAV Canada. I built this operating model because software companies need a better exit than hiring another black box.</p>
+        <a href="https://github.com/unipheas" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <!-- Results -->
-    <section id="results" class="section" aria-label="Results">
-      <div class="container">
-        <p class="section-label" data-i18n="results.label">Track Record</p>
-        <h2 class="section-title" data-i18n="results.title">Work that's held up.</h2>
-
-        <div class="proof-story animate-on-scroll">
-          <h3 class="proof-headline" data-i18n="results.r1.t">A product running across 250+ locations, used by 2M+ people</h3>
-          <p class="proof-body" data-i18n="results.r1.d">At Tommy Car Wash Systems I lead the team behind the consumer app and the POS system running in more than 250 locations. These have to work on every transaction, so there's no room for sloppy releases.</p>
-        </div>
-
-        <div class="proof-story animate-on-scroll">
-          <h3 class="proof-headline" data-i18n="results.r2.t">$300K a week, freed up by automating a manual bottleneck</h3>
-          <p class="proof-body" data-i18n="results.r2.d">At Two Barrels, a manual filing process was capping how fast the business could grow. I replaced it with automation that opened up roughly $300K a week in new revenue capacity.</p>
-        </div>
-
-        <div class="proof-story animate-on-scroll">
-          <h3 class="proof-headline" data-i18n="results.r3.t">Shipped on deadlines that couldn't move</h3>
-          <p class="proof-body" data-i18n="results.r3.d">At 14Four I shipped the interactive experience for PepsiCo's Super Bowl halftime campaign, plus AR and VR work for Nike, Amazon, and Toyota. When the launch date is the Super Bowl, the date doesn't move.</p>
-        </div>
-
-        <div class="proof-story animate-on-scroll">
-          <h3 class="proof-headline" data-i18n="results.r4.t">Ran teams, and the vendors around them</h3>
-          <p class="proof-body" data-i18n="results.r4.d">I've managed in-house and distributed engineers, ridden herd on outside vendors, and built the CI/CD setups that make shipping boring in the good way. That's been at big companies and at startups barely off the ground.</p>
-        </div>
-
-        <div class="proof-story animate-on-scroll">
-          <h3 class="proof-headline" data-i18n="results.r5.t">A track record outside the day job too</h3>
-          <p class="proof-body" data-i18n="results.r5.d">I maintained the open-source MAVSDK-Swift project and co-founded a dev agency with clients on two continents, growing one client from about 1K to 10K monthly visits along the way.</p>
-        </div>
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title" data-i18n="faq.title">The questions behind the first call.</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary data-i18n="faq.q1">Is this a development agency?</summary>
+          <p data-i18n="faq.a1">No. I work on the client side of the table. The objective is to create technical ownership, reliable delivery, and an operation the company controls—not a permanent dependency on my labor.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q2">Do I have to buy all three stages?</summary>
+          <p data-i18n="faq.a2">No. The audit stands on its own and leaves you with a usable risk assessment and roadmap. The Foundation Build or Autonomous Operations only proceeds when the evidence supports it.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q3">Will agents deploy code without approval?</summary>
+          <p data-i18n="faq.a3">No. The system can automate low-risk work, but production promotions, app-store releases, payments, authentication, migrations, destructive data changes, legal-adjacent work, and spending increases remain behind human gates.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q4">What do we own when the engagement ends?</summary>
+          <p data-i18n="faq.a4">The operating system installed for your company: infrastructure, workflows, routines, technical memory, and handoff documentation. Accounts and payment methods remain under client control throughout.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq.q5">Who is the right fit?</summary>
+          <p data-i18n="faq.a5">A founder or operator with a real software business, meaningful revenue or funding, and an expensive delivery problem. The strongest fit is a company paying agency-level costs while lacking visibility, reliability, or internal technical ownership.</p>
+        </details>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <!-- AI-assisted leadership -->
-    <section id="approach" class="section" aria-label="How I Work">
-      <div class="container">
-        <p class="section-label" data-i18n="approach.label">How I Work</p>
-        <h2 class="section-title" data-i18n="approach.title">I use AI to move faster, not to cut corners.</h2>
-
-        <div class="approach-content animate-on-scroll">
-          <p class="approach-lead" data-i18n="approach.lead">I lean on AI-assisted tooling pretty heavily, but in a way that gives leadership more visibility into the work, not less.</p>
-          <p class="approach-body" data-i18n="approach.body1">In practice that means planning, building, review, and testing all run through a workflow with clear checkpoints, so things move fast where it's safe and slow down where it isn't. I use it on real client work and shipping products, not on toy projects.</p>
-          <p class="approach-body" data-i18n="approach.body2">I've also run remote and distributed teams for most of my career, so coordinating people and vendors across time zones is just how I work. The habit of writing things down that comes with that tends to keep delivery on track no matter where people sit.</p>
-        </div>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Engineering Rescue Audit · $12,500</p>
+        <h2 id="contact-title" data-i18n="contact.title">Before you fund another month of uncertainty, establish the truth.</h2>
+      </div>
+      <div class="contact-copy">
+        <p data-i18n="contact.lede">Send me the product, current team or vendor shape, monthly run-rate, and the delivery problem you cannot get a straight answer about. I’ll tell you directly whether the audit is the right next move.</p>
+        <a class="button button-primary" href="mailto:brian.phillips@unipheas.com?subject=Engineering%20Rescue%20Audit&body=Product%20or%20company%3A%0A%0ACurrent%20team%20or%20vendor%3A%0A%0AMonthly%20delivery%20run-rate%3A%0A%0AWhat%20is%20stalled%20or%20unclear%3A%0A" data-i18n="contact.cta">Request the audit</a>
+        <a class="email-link" href="mailto:brian.phillips@unipheas.com">brian.phillips@unipheas.com</a>
       </div>
     </section>
-
-    <div class="divider"></div>
-
-    <!-- Selected Work -->
-    <section id="work" class="section" aria-label="Companies and clients I've worked with">
-      <div class="container">
-        <p class="section-label" data-i18n="work.label">Clients &amp; Work</p>
-        <h2 class="section-title" data-i18n="work.title">Companies and clients I've worked with.</h2>
-
-        <div class="card-grid" aria-live="polite">
-          <div class="flip-card" data-card-index="0">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-                <!-- Populated by JS -->
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="1">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="2">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="3">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="4">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="5">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="6">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-          <div class="flip-card" data-card-index="7">
-            <div class="flip-card-inner">
-              <div class="flip-card-content">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Print-only: all projects rendered statically by JS on load -->
-        <div class="print-all-projects" aria-hidden="true"></div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- About -->
-    <section id="about" class="section animate-on-scroll" aria-label="About">
-      <div class="container about-content">
-        <p class="section-label" data-i18n="about.label">About</p>
-        <h2 class="subheading about-lead" data-i18n="about.lead">I'm the person you bring in when the technical side has gotten away from you.</h2>
-        <p class="about-bio" data-i18n="about.bio1">I've spent fifteen-plus years in mobile and full-stack engineering, working as a development manager, a senior iOS engineer, and a CTO, at big companies and at startups that were barely off the ground. The thread through all of it is steadying things. I walk into engineering that's stalled or messy or just leaderless, and I get founders and execs back to a place where the product ships on a schedule they can trust.</p>
-        <p class="about-bio" data-i18n="about.bio2">Some of how I work comes from outside the office. I've run operations off-grid and I'm an FAA-certified drone pilot, both situations where you plan ahead, adapt when things change, and accept that there's nobody above you to escalate to. I bring that same mindset to a product in trouble. Somebody has to own the call, and I'm comfortable being that person.</p>
-        <div class="about-links">
-          <a href="https://github.com/unipheas" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
-          <a href="mailto:brian.phillips@unipheas.com">brian.phillips@unipheas.com &#8599;</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- FAQ -->
-    <section id="faq" class="section" aria-label="Frequently asked questions">
-      <div class="container">
-        <p class="section-label" data-i18n="faq.label">FAQ</p>
-        <h2 class="section-title" data-i18n="faq.title">Questions I get a lot.</h2>
-
-        <div class="faq-list animate-on-scroll">
-          <details class="faq-item">
-            <summary data-i18n="faq.q1">What is a fractional CTO?</summary>
-            <p class="faq-answer" data-i18n="faq.a1">A fractional CTO is an experienced technical leader who runs your engineering part-time instead of as a full-time hire. You get someone to own technical strategy, lead the team and any vendors, and stay accountable for delivery, for a fraction of the cost and commitment of a full-time executive.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q2">When should a company hire a fractional CTO?</summary>
-            <p class="faq-answer" data-i18n="faq.a2">It usually makes sense when you need senior technical leadership but can't justify a full-time CTO yet: an early-stage startup, a founder without a technical co-founder, or a company whose product has stalled and needs someone to take ownership. If decisions are stuck because nobody owns the technical call, it's time.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q3">What's the difference between a fractional CTO and a full-time CTO?</summary>
-            <p class="faq-answer" data-i18n="faq.a3">The work is the same; the commitment isn't. A fractional CTO gives you the same strategy, leadership, and accountability a full-time CTO would, but part-time and on a flexible arrangement. It fits until the company is big enough that the role needs someone in the seat every day.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q4">How do you fix a stalled or failing software project?</summary>
-            <p class="faq-answer" data-i18n="faq.a4">I start by getting an honest read on the code, the team, and any vendors, then stop the immediate problems so things start shipping again. The bigger architecture and process fixes come after, once delivery is stable. I think of it as assess, stabilize, strengthen.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q5">Can you take over an underperforming development agency or offshore team?</summary>
-            <p class="faq-answer" data-i18n="faq.a5">Yes. A lot of my work is stepping in as the client's technical authority when an agency or offshore team isn't delivering: reviewing what they've built, setting clear standards and a real schedule, and holding them to it, or helping you move on if that's the better call.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q6">How much does a fractional CTO cost, and how are engagements priced?</summary>
-            <p class="faq-answer" data-i18n="faq.a6">Engagements are set up as monthly retainers or fixed-scope projects rather than hourly billing. The audit is a fixed fee, advisory and fractional CTO work are monthly, and recovery projects are scoped to the situation. I take on a small number of clients at a time.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q7">What kind of companies and stages do you work with?</summary>
-            <p class="faq-answer" data-i18n="faq.a7">Startup founders, small and mid-sized businesses, and enterprise teams, often ones under pressure from a stalled product, an unstable codebase, or a vendor that isn't working out. I've worked across both large enterprise initiatives and early-stage startups.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q8">Do you work remotely?</summary>
-            <p class="faq-answer" data-i18n="faq.a8">Yes. I've led remote and distributed teams for most of my career, coordinating engineers and vendors across time zones. Remote is the default in how I work, and the habits that come with it tend to keep delivery on track.</p>
-          </details>
-          <details class="faq-item">
-            <summary data-i18n="faq.q9">What technologies do you specialize in?</summary>
-            <p class="faq-answer" data-i18n="faq.a9">My background is mobile and full-stack engineering: Swift, SwiftUI, UIKit, and React Native on mobile, plus backend and cloud work on AWS. Beyond specific tools, the focus is architecture, CI/CD, release discipline, and the technical strategy that ties engineering to the business.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- Contact -->
-    <section id="contact" class="section animate-on-scroll" aria-label="Contact">
-      <div class="container contact-content">
-        <h2 class="section-title contact-title" data-i18n="contact.title">Tell me what's going wrong.</h2>
-        <p class="contact-subline" data-i18n="contact.subline">If your product's stalling, your vendor isn't working out, or you just need someone experienced to own the hard technical decisions for a while, send me a few lines about what's going on. I'll tell you straight whether I'm the right person to help.</p>
-        <div class="contact-ctas">
-          <a href="mailto:brian.phillips@unipheas.com?subject=Fractional%20CTO%20inquiry" class="btn btn-primary" data-i18n="cta.intro">Book an intro call</a>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:brian.phillips@unipheas.com">brian.phillips@unipheas.com &#8599;</a>
-          <a href="https://github.com/unipheas" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
-    <p data-i18n="footer.text">&copy; 2026 Brian Phillips · Fractional CTO &amp; Technical Leadership</p>
+  <footer class="site-footer">
+    <p>© 2026 Brian Phillips</p>
+    <p data-i18n="footer.tagline">Autonomous CTO · Human judgment, operational leverage.</p>
   </footer>
 
-  <script src="js/site.js?v=7"></script>
+  <script src="js/site.js?v=10"></script>
 </body>
 </html>

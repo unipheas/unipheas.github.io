@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 — Brian Phillips</title>
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Page not found — Brian Phillips</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=10">
 </head>
 <body>
-  <header class="nav-header">
-    <nav class="nav-bar" aria-label="Main navigation">
-      <div class="nav-inner">
-        <a href="/" class="nav-logo">Brian Phillips</a>
-      </div>
-    </nav>
-  </header>
   <main>
-    <section class="hero" aria-label="Page not found">
-      <div class="container hero-content" style="animation:none;opacity:1;transform:none;">
-        <p class="hero-label">404</p>
-        <h1 class="hero-headline">Page not found.</h1>
-        <p class="hero-subline">The page you're looking for doesn't exist or has been moved.</p>
-        <div style="margin-top:32px;">
-          <a href="/" style="font-size:14px;">Back to home &#8599;</a>
+    <section class="hero" aria-labelledby="not-found-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span>404 · Route not found</p>
+          <h1 id="not-found-title">This path does not ship.</h1>
+          <p class="hero-lede">The page may have moved, or the address may be wrong. The operating system is still healthy.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/">Return to unipheas.com</a>
+          </div>
         </div>
+        <aside class="system-console" aria-label="System status">
+          <div class="console-header"><span>REQUEST STATE</span><span class="console-live"><i></i>CORE ONLINE</span></div>
+          <div class="console-mark">
+            <img src="/img/autonomous-cto-mark.jpg" width="1200" height="1200" alt="Autonomous CTO network mark">
+            <span class="mark-label mark-label-human">ROUTE / 404</span>
+            <span class="mark-label mark-label-system">SYSTEM / HEALTHY</span>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <p>&copy; 2026 Brian Phillips</p>
-  </footer>
 </body>
 </html>
