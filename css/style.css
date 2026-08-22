@@ -344,7 +344,7 @@ img {
 
 .hero h1 {
   max-width: 930px;
-  font-size: clamp(58px, 7.7vw, 112px);
+  font-size: clamp(58px, 6.6vw, 96px);
   letter-spacing: -.055em;
   line-height: .88;
 }
