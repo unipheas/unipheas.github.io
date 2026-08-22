@@ -11,7 +11,7 @@
   --paper-light: #fbfaf5;
   --ink: #171714;
   --ink-soft: #49483f;
-  --muted: #747166;
+  --muted: #67645a;
   --rule: #cbc6b9;
   --rule-strong: #9d998d;
   --blue: #215ccf;
@@ -690,6 +690,10 @@ img {
   max-width: 590px;
   margin-top: 30px;
   color: #bbbdbd;
+}
+
+.audit-preview .section-number {
+  color: #8fb3fb;
 }
 
 .audit-preview-copy .text-action {
