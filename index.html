@@ -1,42 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    (function () {
-      try {
-        var theme = localStorage.getItem('theme');
-        if (theme !== 'dark' && theme !== 'light') {
-          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-        }
-        document.documentElement.setAttribute('data-theme', theme);
-        var language = localStorage.getItem('lang') === 'zh' ? 'zh' : 'en';
-        document.documentElement.setAttribute('lang', language === 'zh' ? 'zh-Hans' : 'en');
-      } catch (error) {}
-    })();
-  </script>
-
-  <title>Brian Phillips — Autonomous CTO for Stalled Software Products</title>
-  <meta name="description" content="I replace expensive, unreliable software delivery with a client-owned autonomous engineering operation. Start with a fixed-fee Engineering Rescue Audit.">
+  <script>document.documentElement.classList.add("js");</script>
+  <title>Brian Phillips | Autonomous CTO for Software Delivery Recovery</title>
+  <meta name="description" content="Brian Phillips helps founders recover stalled, agency-dependent software delivery, restore technical ownership, and build a company-controlled engineering operation.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="theme-color" content="#0a0a08">
-
-  <meta property="og:title" content="Brian Phillips — Autonomous CTO">
-  <meta property="og:description" content="From agency dependency to a client-owned engineering operation that ships, observes, and documents itself.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://unipheas.github.io/">
-  <meta property="og:image" content="https://unipheas.github.io/img/social-card.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Brian Phillips — Autonomous CTO">
-  <meta name="twitter:description" content="A proven operating system for rescuing stalled software delivery.">
-  <meta name="twitter:image" content="https://unipheas.github.io/img/social-card.png">
+  <meta name="theme-color" content="#f4f1e8">
 
   <link rel="canonical" href="https://unipheas.github.io/">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta property="og:title" content="Brian Phillips | Autonomous CTO">
+  <meta property="og:description" content="Restore control of stalled software delivery. Start with an evidence-backed Engineering Rescue Audit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unipheas.github.io/">
+  <meta property="og:image" content="https://unipheas.github.io/img/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Brian Phillips, Autonomous CTO. Know what you own. Fix what is failing. Take back control.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brian Phillips | Autonomous CTO">
+  <meta name="twitter:description" content="Software delivery recovery for founders and operators who need truth, ownership, and dependable execution.">
+  <meta name="twitter:image" content="https://unipheas.github.io/img/social-card.png">
 
   <script type="application/ld+json">
   {
@@ -44,370 +33,361 @@
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://unipheas.github.io/#brian",
+        "@id": "https://unipheas.github.io/#brian-phillips",
         "name": "Brian Phillips",
         "jobTitle": "Autonomous CTO",
-        "email": "mailto:brian.phillips@unipheas.com",
         "url": "https://unipheas.github.io/",
+        "email": "mailto:brian.phillips@unipheas.com",
         "sameAs": ["https://github.com/unipheas"],
-        "description": "Technology executive specializing in software delivery rescue, autonomous engineering operations, mobile and full-stack architecture, and human-governed AI delivery systems."
+        "knowsAbout": [
+          "software delivery recovery",
+          "engineering leadership",
+          "technical due diligence",
+          "cloud infrastructure",
+          "mobile application delivery",
+          "human-governed software automation"
+        ]
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://unipheas.github.io/#service",
-        "name": "Brian Phillips — Autonomous CTO",
+        "@id": "https://unipheas.github.io/#autonomous-cto-service",
+        "name": "Brian Phillips, Autonomous CTO",
         "url": "https://unipheas.github.io/",
-        "founder": {"@id": "https://unipheas.github.io/#brian"},
-        "provider": {"@id": "https://unipheas.github.io/#brian"},
-        "areaServed": {"@type": "Place", "name": "Worldwide (remote)"},
-        "serviceType": ["Engineering Rescue Audit", "Foundation Build", "Autonomous Operations", "Fractional CTO"],
-        "description": "A three-stage service that diagnoses stalled software delivery, rebuilds the foundation, and installs a client-owned autonomous engineering operation.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Autonomous CTO engagements",
-          "itemListElement": [
-            {"@type": "Offer", "price": "12500", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Engineering Rescue Audit"}},
-            {"@type": "Offer", "lowPrice": "45000", "highPrice": "75000", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Foundation Build"}},
-            {"@type": "Offer", "lowPrice": "4000", "highPrice": "8000", "priceCurrency": "USD", "itemOffered": {"@type": "Service", "name": "Autonomous Operations"}}
-          ]
-        }
+        "founder": {"@id": "https://unipheas.github.io/#brian-phillips"},
+        "provider": {"@id": "https://unipheas.github.io/#brian-phillips"},
+        "areaServed": "Worldwide",
+        "serviceType": [
+          "Engineering Rescue Audit",
+          "Foundation Build",
+          "Autonomous Operations",
+          "Fractional CTO leadership"
+        ],
+        "description": "Senior technical leadership for founders and operators recovering stalled, expensive, or agency-dependent software products."
       },
       {
         "@type": "WebSite",
         "@id": "https://unipheas.github.io/#website",
         "url": "https://unipheas.github.io/",
-        "name": "Brian Phillips — Autonomous CTO",
-        "publisher": {"@id": "https://unipheas.github.io/#brian"}
+        "name": "Brian Phillips | Autonomous CTO",
+        "publisher": {"@id": "https://unipheas.github.io/#brian-phillips"},
+        "inLanguage": "en-US"
       }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/style.css?v=11">
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="Brian Phillips, home">
-        <span class="brand-mark" aria-hidden="true">BP</span>
-        <span class="brand-copy">
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="site-identity" href="index.html">
+        <span class="identity-mark">BP</span>
+        <span class="identity-copy">
           <strong>Brian Phillips</strong>
-          <span data-i18n="brand.role">Autonomous CTO</span>
+          <span>Autonomous CTO</span>
         </span>
       </a>
 
-      <div class="nav-actions">
-        <ul class="nav-links">
-          <li><a href="#proof" data-i18n="nav.proof">Proof</a></li>
-          <li><a href="#system" data-i18n="nav.system">The system</a></li>
-          <li><a href="#engagement" data-i18n="nav.engagement">Engagement</a></li>
-          <li><a href="#guardrails" data-i18n="nav.guardrails">Guardrails</a></li>
-        </ul>
-        <button class="utility-button" id="themeToggle" type="button" aria-label="Switch color theme">
-          <span aria-hidden="true">◐</span>
-        </button>
-        <button class="utility-button language-toggle" id="langToggle" type="button" aria-label="切换到中文 / Switch language">中文</button>
-        <a class="nav-cta" href="#contact" data-i18n="nav.cta">Start with the audit</a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
-          <span></span><span></span>
-        </button>
-      </div>
-    </nav>
-    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <a href="#proof" data-i18n="nav.proof">Proof</a>
-      <a href="#system" data-i18n="nav.system">The system</a>
-      <a href="#engagement" data-i18n="nav.engagement">Engagement</a>
-      <a href="#guardrails" data-i18n="nav.guardrails">Guardrails</a>
-      <a href="#contact" data-i18n="nav.cta">Start with the audit</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+        <span class="menu-label">Menu</span>
+        <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-menu>
+        <a href="engineering-rescue-audit.html">The audit</a>
+        <a href="approach.html">Approach</a>
+        <a href="about.html">About</a>
+        <a class="nav-contact" href="contact.html">Start a conversation <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-grid">
+    <section class="hero hero-home" aria-labelledby="hero-title">
+      <div class="page-shell hero-layout">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="hero.eyebrow">Autonomous CTO · Delivery rescue</span></p>
-          <h1 id="hero-title" data-i18n="hero.title">Replace the agency. Keep the operation.</h1>
-          <p class="hero-lede" data-i18n="hero.lede">I turn stalled, agency-dependent software into a client-owned engineering operation that ships reliably, watches itself, and keeps running after I leave.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact" data-i18n="hero.primary">Start with a $12,500 audit</a>
-            <a class="button button-secondary" href="#proof" data-i18n="hero.secondary">See the real test bed</a>
+          <p class="kicker"><span></span> Software delivery recovery</p>
+          <h1 id="hero-title">Know what you own.<br>Fix what is failing.<br><em>Take back control.</em></h1>
+          <p class="hero-summary">I help founders and operators recover stalled, expensive, or agency-dependent software products. The work starts with evidence and ends with an engineering operation your company understands and controls.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="engineering-rescue-audit.html">Explore the Rescue Audit <span aria-hidden="true">↗</span></a>
+            <a class="text-action" href="approach.html">How the recovery works <span aria-hidden="true">→</span></a>
           </div>
-          <p class="hero-note" data-i18n="hero.note">For founders and operators spending $15K–$30K/month without dependable delivery.</p>
         </div>
 
-        <aside class="system-console" aria-label="Autonomous engineering operating model">
-          <div class="console-header">
-            <span data-i18n="console.title">OPERATING STATE</span>
-            <span class="console-live"><i></i><span data-i18n="console.live">HUMAN GOVERNED</span></span>
+        <aside class="control-brief" aria-label="Engagement summary">
+          <div class="brief-heading">
+            <span>Control brief / 001</span>
+            <span class="brief-state"><i></i> Human led</span>
           </div>
-          <div class="console-mark">
-            <img src="img/autonomous-cto-mark.jpg" width="1200" height="1200" alt="Autonomous CTO network mark: a governed system of connected nodes in orbit">
-            <span class="mark-label mark-label-human" data-i18n="console.human">HUMAN GATE</span>
-            <span class="mark-label mark-label-system" data-i18n="console.system">OPERATING SYSTEM</span>
-          </div>
-          <dl class="console-stats">
-            <div><dt data-i18n="console.stat1">Low-risk work</dt><dd data-i18n="console.stat1v">Automated</dd></div>
-            <div><dt data-i18n="console.stat2">Production</dt><dd data-i18n="console.stat2v">Human approved</dd></div>
-            <div><dt data-i18n="console.stat3">Ownership</dt><dd data-i18n="console.stat3v">100% client</dd></div>
+          <dl>
+            <div>
+              <dt>Trigger</dt>
+              <dd>Leadership is paying for delivery it cannot independently verify.</dd>
+            </div>
+            <div>
+              <dt>First move</dt>
+              <dd>Establish ground truth across ownership, code, cloud, delivery, cost, and risk.</dd>
+            </div>
+            <div>
+              <dt>Result</dt>
+              <dd>A prioritized decision record and a company-controlled path forward.</dd>
+            </div>
           </dl>
+          <div class="brief-footer">
+            <span>Engineering Rescue Audit</span>
+            <strong>$12,500</strong>
+            <span>2–3 weeks</span>
+          </div>
         </aside>
+      </div>
+      <div class="page-shell hero-footnote">
+        <span>For founders, owners, investors, and operating executives</span>
+        <span>Remote engagements</span>
       </div>
     </section>
 
-    <section class="trust-strip" aria-label="Selected experience">
-      <p data-i18n="trust.label">Built in the real world. Trusted across:</p>
-      <ul>
-        <li>Let’s Ride</li><li>Tommy Car Wash Systems</li><li>Nike</li><li>Amazon</li><li>PepsiCo</li><li>NAV Canada</li>
-      </ul>
+    <section class="experience-band" aria-label="Selected experience">
+      <div class="page-shell experience-band-inner">
+        <p>Senior engineering work across</p>
+        <ul>
+          <li>Tommy Car Wash Systems</li>
+          <li>Nike</li>
+          <li>Amazon</li>
+          <li>Toyota</li>
+          <li>PepsiCo</li>
+          <li>NAV Canada</li>
+        </ul>
+      </div>
     </section>
 
     <section class="section problem-section" aria-labelledby="problem-title">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow" data-i18n="problem.eyebrow">The expensive failure mode</p>
-          <h2 id="problem-title" data-i18n="problem.title">You should not need another agency to understand the agency.</h2>
+      <div class="page-shell section-grid">
+        <div class="section-intro">
+          <p class="section-number">01 / The situation</p>
+          <h2 id="problem-title">The problem is bigger than a late release.</h2>
         </div>
-        <p data-i18n="problem.lede">When delivery is opaque, every month buys more dependency: undocumented systems, fragile releases, and decisions nobody inside the company can confidently make.</p>
+        <div class="section-body section-body-lead">
+          <p class="lead-copy">When leadership cannot tell what is working, who controls the accounts, or whether the next release is safe, the company has lost the ability to make technical decisions.</p>
+          <p>A new agency can add people. It cannot create truth from the outside. Recovery begins by building an evidence-backed record of the product, the delivery operation, and the risks the business is carrying.</p>
+        </div>
       </div>
-      <div class="signal-list">
+
+      <div class="page-shell issue-ledger" role="list" aria-label="Common software delivery warning signs">
+        <div class="issue-ledger-item" role="listitem">
+          <span class="ledger-index">01</span>
+          <h3>Progress exists only in status meetings.</h3>
+          <p>Leadership cannot verify what shipped, what remains, or why the plan moved again.</p>
+        </div>
+        <div class="issue-ledger-item" role="listitem">
+          <span class="ledger-index">02</span>
+          <h3>The vendor controls critical access.</h3>
+          <p>Repositories, cloud accounts, signing identities, domains, and deployment knowledge sit outside company control.</p>
+        </div>
+        <div class="issue-ledger-item" role="listitem">
+          <span class="ledger-index">03</span>
+          <h3>Every release depends on heroics.</h3>
+          <p>Testing is inconsistent, rollback is uncertain, and a routine change can become a business incident.</p>
+        </div>
+        <div class="issue-ledger-item" role="listitem">
+          <span class="ledger-index">04</span>
+          <h3>No one can explain the real run-rate.</h3>
+          <p>Agency fees, cloud spend, tooling, and rework accumulate without a decision-quality view of cost.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section audit-preview" aria-labelledby="audit-preview-title">
+      <div class="page-shell audit-preview-layout">
+        <div class="audit-preview-copy">
+          <p class="section-number">02 / The first decision</p>
+          <h2 id="audit-preview-title">Buy clarity before you buy more development.</h2>
+          <p>The Engineering Rescue Audit is an independent, fixed-scope engagement. In two to three weeks, leadership receives an evidence-backed view of what it owns, what is risky, and what deserves attention during the next 90 days.</p>
+          <a class="text-action text-action-light" href="engineering-rescue-audit.html">See the audit scope and deliverables <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="audit-output" role="group" aria-label="Engineering Rescue Audit outputs">
+          <p class="output-label">Decision record / delivered</p>
+          <ol>
+            <li><span>01</span><strong>Executive risk briefing</strong><small>What leadership needs to decide now</small></li>
+            <li><span>02</span><strong>Ownership and access map</strong><small>Who controls every critical system</small></li>
+            <li><span>03</span><strong>Delivery and technical findings</strong><small>Claims tied to evidence and consequence</small></li>
+            <li><span>04</span><strong>Prioritized 90-day roadmap</strong><small>Sequenced actions, owners, and dependencies</small></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section difference-section" aria-labelledby="difference-title">
+      <div class="page-shell section-grid">
+        <div class="section-intro">
+          <p class="section-number">03 / The difference</p>
+          <h2 id="difference-title">A recovery engagement, not another dependency.</h2>
+        </div>
+        <div class="section-body">
+          <p class="lead-copy">I work on the client side of the table. The objective is to improve the company’s ability to see, decide, and deliver without making my continued presence a hidden requirement.</p>
+        </div>
+      </div>
+
+      <div class="page-shell principles-list">
         <article>
-          <span>01</span>
-          <h3 data-i18n="problem.p1t">Money leaves. Software does not.</h3>
-          <p data-i18n="problem.p1d">Five-figure invoices continue while launch dates move and the backlog grows.</p>
+          <span>Ground truth</span>
+          <h3>Evidence before prescription</h3>
+          <p>Recommendations follow repository, infrastructure, account, delivery, and cost evidence. The audit does not begin with a predetermined diagnosis.</p>
         </article>
         <article>
-          <span>02</span>
-          <h3 data-i18n="problem.p2t">The vendor owns the truth.</h3>
-          <p data-i18n="problem.p2d">Leadership cannot see actual progress, risk, or what it would take to change teams.</p>
+          <span>Ownership</span>
+          <h3>Client control from the start</h3>
+          <p>Repositories, accounts, infrastructure, payment methods, and operating knowledge remain under company control.</p>
         </article>
         <article>
-          <span>03</span>
-          <h3 data-i18n="problem.p3t">Every release is a special event.</h3>
-          <p data-i18n="problem.p3d">Testing is manual, rollback is uncertain, and a small change can become an incident.</p>
+          <span>Governance</span>
+          <h3>Automation with hard boundaries</h3>
+          <p>Appropriate routine work can be automated. Production, money, identity, security, legal, and destructive decisions stay with people.</p>
+        </article>
+        <article>
+          <span>Continuity</span>
+          <h3>A useful exit is part of the work</h3>
+          <p>Decision records, runbooks, onboarding guidance, access records, and continuity documentation are maintained as operating assets.</p>
         </article>
       </div>
     </section>
 
-    <section class="section proof-section" id="proof" aria-labelledby="proof-title">
-      <div class="case-header">
+    <section class="section path-section" aria-labelledby="path-title">
+      <div class="page-shell section-heading-row">
         <div>
-          <p class="eyebrow" data-i18n="proof.eyebrow">The test bed · Let’s Ride</p>
-          <h2 id="proof-title" data-i18n="proof.title">From agency hostage to owner-operated.</h2>
+          <p class="section-number">04 / The commercial path</p>
+          <h2 id="path-title">Each stage earns the next.</h2>
         </div>
-        <div class="case-stamp">
-          <span data-i18n="proof.stampTop">REAL ENGAGEMENT</span>
-          <strong data-i18n="proof.stampMain">16 WEEKS</strong>
-          <span data-i18n="proof.stampBottom">PART-TIME</span>
-        </div>
+        <p>No build is proposed before the audit establishes what is true. No production automation is introduced before the operating foundation can support it safely.</p>
       </div>
 
-      <div class="case-metrics">
-        <article>
-          <p class="metric-before">$23.7K/mo</p>
-          <p class="metric-after">$700–$1.5K/mo</p>
-          <span data-i18n="proof.m1">Agency run-rate → core infrastructure</span>
+      <div class="page-shell path-steps">
+        <article class="path-step path-step-primary">
+          <div class="path-meta"><span>Stage 01</span><span>2–3 weeks</span></div>
+          <h3>Engineering Rescue Audit</h3>
+          <p>Establish ownership, delivery reality, risk, cost visibility, and the next 90 days.</p>
+          <div class="path-price"><strong>$12,500</strong><span>fixed fee</span></div>
+          <a href="engineering-rescue-audit.html">Audit details <span aria-hidden="true">↗</span></a>
         </article>
-        <article>
-          <p class="metric-before">$300K+</p>
-          <p class="metric-after">&gt;90%</p>
-          <span data-i18n="proof.m2">Spent without launch → operating-cost reduction</span>
+        <article class="path-step">
+          <div class="path-meta"><span>Stage 02</span><span>8–12 weeks</span></div>
+          <h3>Foundation Build</h3>
+          <p>Restore company control and make delivery repeatable, observable, documented, and safe to operate.</p>
+          <div class="path-price"><strong>$45K–$75K</strong><span>starting range</span></div>
         </article>
-        <article>
-          <p class="metric-before" data-i18n="proof.m3b">Vendor black box</p>
-          <p class="metric-after" data-i18n="proof.m3a">Client-owned system</p>
-          <span data-i18n="proof.m3">Code, cloud, deployment, memory, and runbooks</span>
+        <article class="path-step">
+          <div class="path-meta"><span>Stage 03</span><span>Ongoing</span></div>
+          <h3>Autonomous Operations</h3>
+          <p>Introduce governed routines for appropriate work, with senior judgment retained at high-risk decision points.</p>
+          <div class="path-price"><strong>$4K–$8K</strong><span>per month</span></div>
         </article>
       </div>
-
-      <div class="case-narrative">
-        <div class="case-rail" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-        <ol>
-          <li>
-            <span class="case-number">01</span>
-            <div><h3 data-i18n="proof.s1t">Establish ground truth</h3><p data-i18n="proof.s1d">Audited the code, infrastructure, vendor relationship, delivery process, and operational risk before changing the system.</p></div>
-          </li>
-          <li>
-            <span class="case-number">02</span>
-            <div><h3 data-i18n="proof.s2t">Rebuild the foundation</h3><p data-i18n="proof.s2d">Consolidated architecture, put accounts under company control, and made repeatable staging, production, and rollback normal.</p></div>
-          </li>
-          <li>
-            <span class="case-number">03</span>
-            <div><h3 data-i18n="proof.s3t">Instrument delivery</h3><p data-i18n="proof.s3d">Added CI/CD, error visibility, cost controls, release gates, and documentation that tells an operator what is actually happening.</p></div>
-          </li>
-          <li>
-            <span class="case-number">04</span>
-            <div><h3 data-i18n="proof.s4t">Install governed autonomy</h3><p data-i18n="proof.s4d">Deployed specialized agents for maintenance, review, security, reporting, and fleet supervision—with high-risk decisions reserved for humans.</p></div>
-          </li>
-        </ol>
-      </div>
-
-      <p class="case-disclosure" data-i18n="proof.disclosure">The figures above come from the operating model built for Let’s Ride. They describe that engagement, not a guarantee of identical results for every company.</p>
-    </section>
-
-    <section class="section system-section" id="system" aria-labelledby="system-title">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow" data-i18n="system.eyebrow">The autonomous engineering operation</p>
-          <h2 id="system-title" data-i18n="system.title">Automation handles toil. Humans keep judgment.</h2>
-        </div>
-        <p data-i18n="system.lede">This is not a chatbot bolted onto a broken team. It is an operating system: shared technical memory, repeatable infrastructure, observable delivery, specialized agents, and hard approval boundaries.</p>
-      </div>
-
-      <div class="maturity-ladder">
-        <article><span>00</span><div><h3 data-i18n="system.l0t">Artisanal</h3><p data-i18n="system.l0d">Knowledge lives in people. Releases depend on heroics.</p></div></article>
-        <article><span>01</span><div><h3 data-i18n="system.l1t">Repeatable</h3><p data-i18n="system.l1d">The path to production is documented and reproducible.</p></div></article>
-        <article><span>02</span><div><h3 data-i18n="system.l2t">Instrumented</h3><p data-i18n="system.l2d">Errors, cost, delivery, and risk are visible.</p></div></article>
-        <article><span>03</span><div><h3 data-i18n="system.l3t">Automated</h3><p data-i18n="system.l3d">Low-risk work moves from issue to reviewed change.</p></div></article>
-        <article class="active"><span>04</span><div><h3 data-i18n="system.l4t">Reflexive</h3><p data-i18n="system.l4d">The operation detects, proposes, verifies, and safely idles.</p></div></article>
-        <article><span>05</span><div><h3 data-i18n="system.l5t">Directed</h3><p data-i18n="system.l5d">Human intent steers an observable agent fleet.</p></div></article>
-      </div>
-
-      <div class="system-detail">
-        <div class="system-index">SYSTEM / 01–06</div>
-        <dl>
-          <div><dt data-i18n="system.d1t">Technical brain</dt><dd data-i18n="system.d1d">A durable decision record, company context, architecture, conventions, and current priorities.</dd></div>
-          <div><dt data-i18n="system.d2t">Delivery pipeline</dt><dd data-i18n="system.d2d">Tested, staged, reviewable changes with explicit promotion and rollback paths.</dd></div>
-          <div><dt data-i18n="system.d3t">Agent fleet</dt><dd data-i18n="system.d3d">Purpose-built routines for fixes, issues, review, security, reporting, supervision, and cleanup.</dd></div>
-          <div><dt data-i18n="system.d4t">Observability</dt><dd data-i18n="system.d4d">Uptime, errors, spend, deployment health, and fleet performance become operating signals.</dd></div>
-          <div><dt data-i18n="system.d5t">Owner interface</dt><dd data-i18n="system.d5d">A weekly plain-English report separates what shipped, what is healthy, and what needs a decision.</dd></div>
-          <div><dt data-i18n="system.d6t">Exit package</dt><dd data-i18n="system.d6d">Owner’s manual, operations runbook, onboarding guide, continuity checklist, and client-controlled access.</dd></div>
-        </dl>
+      <div class="page-shell path-note">
+        <p>Fractional or Autonomous CTO leadership can continue where the evidence and operating need support it.</p>
+        <a class="text-action" href="approach.html">See the operating approach <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
-    <section class="section engagement-section" id="engagement" aria-labelledby="engagement-title">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="engagement.eyebrow">One path, three stages</p>
-        <h2 id="engagement-title" data-i18n="engagement.title">Diagnose first. Build from evidence. Operate what works.</h2>
-      </div>
-
-      <div class="offer-stack">
-        <article class="offer featured">
-          <div class="offer-topline"><span>01</span><span data-i18n="engagement.o1tag">THE ENTRY POINT</span></div>
-          <h3 data-i18n="engagement.o1t">Engineering Rescue Audit</h3>
-          <p class="offer-price">$12,500 <small data-i18n="engagement.fixed">fixed fee</small></p>
-          <p data-i18n="engagement.o1d">Two to three weeks to establish ground truth: code, cloud, delivery, vendor risk, security, and ownership.</p>
+    <section class="section governance-section" aria-labelledby="governance-title">
+      <div class="page-shell governance-layout">
+        <div class="governance-copy">
+          <p class="section-number section-number-light">05 / The boundary</p>
+          <h2 id="governance-title">Automation handles appropriate work. People retain consequential judgment.</h2>
+          <p>Tools may investigate, draft, test, review, report, and propose. They do not approve their own production access or make unilateral decisions that can materially harm the company.</p>
+          <a class="text-action text-action-light" href="approach.html#governance">Read the governance model <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="decision-boundary" role="group" aria-label="Human approval boundaries">
+          <div class="boundary-head"><span>Human approval required</span><span>Policy / enforced</span></div>
           <ul>
-            <li data-i18n="engagement.o1b1">Executive risk briefing</li>
-            <li data-i18n="engagement.o1b2">Technical and delivery findings</li>
-            <li data-i18n="engagement.o1b3">Prioritized 90-day roadmap</li>
-            <li data-i18n="engagement.o1b4">Fixed-price options for what comes next</li>
+            <li><span>01</span>Production promotions and app-store releases</li>
+            <li><span>02</span>Payments, billing, identity, and authorization</li>
+            <li><span>03</span>Destructive changes and production data operations</li>
+            <li><span>04</span>Security-sensitive, legal, and spending decisions</li>
           </ul>
-          <a href="#contact" class="text-link" data-i18n="engagement.o1cta">Request the audit <span aria-hidden="true">↗</span></a>
-        </article>
-
-        <article class="offer">
-          <div class="offer-topline"><span>02</span><span data-i18n="engagement.o2tag">8–12 WEEKS</span></div>
-          <h3 data-i18n="engagement.o2t">Foundation Build</h3>
-          <p class="offer-price">$45K–$75K <small data-i18n="engagement.fixed">fixed fee</small></p>
-          <p data-i18n="engagement.o2d">Rebuild the parts that make reliable delivery possible: ownership, architecture, CI/CD, observability, security, and operational memory.</p>
-          <ul>
-            <li data-i18n="engagement.o2b1">Client-controlled infrastructure</li>
-            <li data-i18n="engagement.o2b2">Repeatable staging and production</li>
-            <li data-i18n="engagement.o2b3">Monitoring, rollback, and cost controls</li>
-            <li data-i18n="engagement.o2b4">Documented operating foundation</li>
-          </ul>
-        </article>
-
-        <article class="offer">
-          <div class="offer-topline"><span>03</span><span data-i18n="engagement.o3tag">ONGOING</span></div>
-          <h3 data-i18n="engagement.o3t">Autonomous Operations</h3>
-          <p class="offer-price">$4K–$8K<small data-i18n="engagement.month">/month</small></p>
-          <p data-i18n="engagement.o3d">Install and operate the agent fleet above a proven foundation. You keep the system; my judgment remains attached while it creates value.</p>
-          <ul>
-            <li data-i18n="engagement.o3b1">Specialized maintenance and review agents</li>
-            <li data-i18n="engagement.o3b2">Weekly owner report and steering call</li>
-            <li data-i18n="engagement.o3b3">Human approval for high-risk work</li>
-            <li data-i18n="engagement.o3b4">Continuously current exit documentation</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section guardrail-section" id="guardrails" aria-labelledby="guardrail-title">
-      <div class="guardrail-intro">
-        <p class="eyebrow" data-i18n="guardrails.eyebrow">The human boundary</p>
-        <h2 id="guardrail-title" data-i18n="guardrails.title">Zero human toil is the goal. Zero human judgment is not.</h2>
-        <p data-i18n="guardrails.lede">Agents may investigate, implement, test, and propose. They do not get unilateral authority over the decisions that can hurt the company.</p>
-      </div>
-      <div class="guardrail-list">
-        <article><span>LOCK / 01</span><h3 data-i18n="guardrails.g1t">Money and identity</h3><p data-i18n="guardrails.g1d">Payments, billing, authentication, and authorization always receive human review.</p></article>
-        <article><span>LOCK / 02</span><h3 data-i18n="guardrails.g2t">Production</h3><p data-i18n="guardrails.g2d">Production promotions and app-store releases remain deliberate human actions.</p></article>
-        <article><span>LOCK / 03</span><h3 data-i18n="guardrails.g3t">Data</h3><p data-i18n="guardrails.g3d">Destructive migrations and production-data deletion are never autonomous.</p></article>
-        <article><span>LOCK / 04</span><h3 data-i18n="guardrails.g4t">Spend and legal</h3><p data-i18n="guardrails.g4d">Run-rate increases and legal-adjacent changes stop for owner approval.</p></article>
-      </div>
-    </section>
-
-    <section class="section credibility-section" aria-labelledby="credibility-title">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow" data-i18n="credibility.eyebrow">Operator, not theorist</p>
-          <h2 id="credibility-title" data-i18n="credibility.title">The system is new. The judgment behind it is not.</h2>
         </div>
-        <p data-i18n="credibility.lede">Fifteen-plus years across CTO leadership, mobile, full-stack, infrastructure, agency delivery, and products where failure is visible immediately.</p>
-      </div>
-      <div class="credibility-grid">
-        <article><strong>2M+</strong><span data-i18n="credibility.c1">users on a consumer mobile platform</span></article>
-        <article><strong>250+</strong><span data-i18n="credibility.c2">locations on a transaction-critical POS platform</span></article>
-        <article><strong>$300K</strong><span data-i18n="credibility.c3">weekly capacity unlocked through automation</span></article>
-        <article><strong data-i18n="credibility.c4n">SUPER BOWL</strong><span data-i18n="credibility.c4">delivery on a deadline that could not move</span></article>
-      </div>
-      <div class="about-line">
-        <p data-i18n="credibility.about">I’m Brian Phillips. I have led teams, taken over vendor failures, built products from zero, maintained open-source drone software, and shipped for companies from early-stage startups to Nike, Amazon, Toyota, PepsiCo, and NAV Canada. I built this operating model because software companies need a better exit than hiring another black box.</p>
-        <a href="https://github.com/unipheas" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
-    <section class="section faq-section" aria-labelledby="faq-title">
-      <div class="section-heading">
-        <p class="eyebrow">FAQ</p>
-        <h2 id="faq-title" data-i18n="faq.title">The questions behind the first call.</h2>
-      </div>
-      <div class="faq-list">
-        <details>
-          <summary data-i18n="faq.q1">Is this a development agency?</summary>
-          <p data-i18n="faq.a1">No. I work on the client side of the table. The objective is to create technical ownership, reliable delivery, and an operation the company controls—not a permanent dependency on my labor.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq.q2">Do I have to buy all three stages?</summary>
-          <p data-i18n="faq.a2">No. The audit stands on its own and leaves you with a usable risk assessment and roadmap. The Foundation Build or Autonomous Operations only proceeds when the evidence supports it.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq.q3">Will agents deploy code without approval?</summary>
-          <p data-i18n="faq.a3">No. The system can automate low-risk work, but production promotions, app-store releases, payments, authentication, migrations, destructive data changes, legal-adjacent work, and spending increases remain behind human gates.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq.q4">What do we own when the engagement ends?</summary>
-          <p data-i18n="faq.a4">The operating system installed for your company: infrastructure, workflows, routines, technical memory, and handoff documentation. Accounts and payment methods remain under client control throughout.</p>
-        </details>
-        <details>
-          <summary data-i18n="faq.q5">Who is the right fit?</summary>
-          <p data-i18n="faq.a5">A founder or operator with a real software business, meaningful revenue or funding, and an expensive delivery problem. The strongest fit is a company paying agency-level costs while lacking visibility, reliability, or internal technical ownership.</p>
-        </details>
+    <section class="section fit-section" aria-labelledby="fit-title">
+      <div class="page-shell section-grid">
+        <div class="section-intro">
+          <p class="section-number">06 / Fit</p>
+          <h2 id="fit-title">Built for a real operating problem.</h2>
+        </div>
+        <div class="fit-columns">
+          <div>
+            <h3>Strong fit</h3>
+            <ul class="check-list">
+              <li>A real software product with revenue, funding, or material operating dependence</li>
+              <li>Five-figure monthly delivery cost or comparable business exposure</li>
+              <li>Missed launches, vendor opacity, unstable releases, or unclear ownership</li>
+              <li>A decision-maker willing to provide the access required for an independent audit</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Not the right fit</h3>
+            <ul class="plain-list">
+              <li>Idea-stage product development</li>
+              <li>A predetermined conclusion about a vendor or team</li>
+              <li>Deadline, savings, or security guarantees</li>
+              <li>Production automation without testing, rollback, and human approval gates</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div>
-        <p class="eyebrow" data-i18n="contact.eyebrow">Engineering Rescue Audit · $12,500</p>
-        <h2 id="contact-title" data-i18n="contact.title">Before you fund another month of uncertainty, establish the truth.</h2>
+    <section class="section operator-section" aria-labelledby="operator-title">
+      <div class="page-shell operator-layout">
+        <div class="operator-heading">
+          <p class="section-number">07 / The operator</p>
+          <h2 id="operator-title">Senior technical judgment, directly accountable.</h2>
+        </div>
+        <div class="operator-copy">
+          <p class="lead-copy">I’m Brian Phillips. I have spent more than fifteen years building and leading mobile, web, cloud, and delivery work where operational failure is visible to the business.</p>
+          <p>My background includes engineering leadership on transaction-critical systems deployed across more than 250 locations, work for global brands, open-source drone software, and the practical reality of inheriting systems built by someone else.</p>
+          <div class="operator-links">
+            <a class="text-action" href="about.html">More about my experience <span aria-hidden="true">→</span></a>
+            <a class="text-action" href="https://github.com/unipheas" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
       </div>
-      <div class="contact-copy">
-        <p data-i18n="contact.lede">Send me the product, current team or vendor shape, monthly run-rate, and the delivery problem you cannot get a straight answer about. I’ll tell you directly whether the audit is the right next move.</p>
-        <a class="button button-primary" href="mailto:brian.phillips@unipheas.com?subject=Engineering%20Rescue%20Audit&body=Product%20or%20company%3A%0A%0ACurrent%20team%20or%20vendor%3A%0A%0AMonthly%20delivery%20run-rate%3A%0A%0AWhat%20is%20stalled%20or%20unclear%3A%0A" data-i18n="contact.cta">Request the audit</a>
-        <a class="email-link" href="mailto:brian.phillips@unipheas.com">brian.phillips@unipheas.com</a>
+    </section>
+
+    <section class="final-cta" aria-labelledby="cta-title">
+      <div class="page-shell final-cta-layout">
+        <div>
+          <p class="kicker kicker-dark"><span></span> Engineering Rescue Audit</p>
+          <h2 id="cta-title">Before you fund another uncertain month, establish what is true.</h2>
+        </div>
+        <div class="final-cta-action">
+          <p>Tell me what leadership cannot verify about the product, the current team or vendor, and the path to production.</p>
+          <a class="button button-light" href="contact.html">Start a serious conversation <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Brian Phillips</p>
-    <p data-i18n="footer.tagline">Autonomous CTO · Human judgment, operational leverage.</p>
+    <div class="page-shell footer-layout">
+      <div>
+        <strong>Brian Phillips</strong>
+        <span>Autonomous CTO</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="engineering-rescue-audit.html">The audit</a>
+        <a href="approach.html">Approach</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Privacy_Policy.html">Privacy</a>
+      </nav>
+      <p>© 2026 Brian Phillips</p>
+    </div>
   </footer>
 
-  <script src="js/site.js?v=10"></script>
+  <script src="js/site.js?v=11" defer></script>
 </body>
 </html>
