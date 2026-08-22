@@ -11,8 +11,6 @@
           theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         }
         document.documentElement.setAttribute('data-theme', theme);
-        var language = localStorage.getItem('lang') === 'zh' ? 'zh' : 'en';
-        document.documentElement.setAttribute('lang', language === 'zh' ? 'zh-Hans' : 'en');
       } catch (error) {}
     })();
   </script>
@@ -108,7 +106,6 @@
         <button class="utility-button" id="themeToggle" type="button" aria-label="Switch color theme">
           <span aria-hidden="true">◐</span>
         </button>
-        <button class="utility-button language-toggle" id="langToggle" type="button" aria-label="切换到中文 / Switch language">中文</button>
         <a class="nav-cta" href="#contact" data-i18n="nav.cta">Start with the audit</a>
         <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
           <span></span><span></span>

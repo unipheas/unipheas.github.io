@@ -208,11 +208,6 @@ button {
   background: var(--surface);
 }
 
-.language-toggle {
-  width: 48px;
-  font: 500 11px/1 var(--font-mono);
-}
-
 .nav-cta {
   min-height: 40px;
   padding: 0 17px;
