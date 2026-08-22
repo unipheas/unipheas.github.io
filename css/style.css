@@ -650,7 +650,7 @@ img {
   border-top: 1px solid var(--ink);
 }
 
-.issue-ledger article {
+.issue-ledger-item {
   min-height: 300px;
   padding: 28px clamp(24px, 3vw, 44px) 36px 0;
   border-bottom: 1px solid var(--rule);
@@ -658,12 +658,12 @@ img {
   grid-template-rows: auto 1fr auto;
 }
 
-.issue-ledger article:nth-child(odd) {
+.issue-ledger-item:nth-child(odd) {
   padding-right: clamp(40px, 6vw, 88px);
   border-right: 1px solid var(--rule);
 }
 
-.issue-ledger article:nth-child(even) {
+.issue-ledger-item:nth-child(even) {
   padding-left: clamp(40px, 6vw, 88px);
 }
 
@@ -2136,9 +2136,9 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .issue-ledger article,
-  .issue-ledger article:nth-child(odd),
-  .issue-ledger article:nth-child(even) {
+  .issue-ledger-item,
+  .issue-ledger-item:nth-child(odd),
+  .issue-ledger-item:nth-child(even) {
     min-height: 260px;
     padding: 24px 0 30px;
     border-right: 0;
