@@ -1121,6 +1121,7 @@ img {
 .breadcrumbs {
   margin-bottom: clamp(44px, 7vw, 88px);
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   color: var(--muted);
@@ -1131,6 +1132,10 @@ img {
 }
 
 .breadcrumbs a {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   color: var(--ink-soft);
 }
 
