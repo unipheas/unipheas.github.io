@@ -118,6 +118,7 @@ img {
 }
 
 .skip-link {
+  min-height: 44px;
   position: fixed;
   z-index: 1000;
   top: 12px;
@@ -169,6 +170,7 @@ img {
 }
 
 .site-identity {
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -1077,7 +1079,9 @@ img {
 }
 
 .footer-layout nav a {
+  min-width: 44px;
   min-height: 44px;
+  padding-inline: 4px;
   display: inline-flex;
   align-items: center;
   color: #d6d4cb;
