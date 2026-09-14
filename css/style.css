@@ -2364,3 +2364,115 @@ img {
     display: none;
   }
 }
+
+/* Software consulting: compact service and example layouts. */
+.hero-personal {
+  max-width: 610px;
+  margin-top: 16px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.situation-brief dt {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -.025em;
+  line-height: 1.1;
+  text-transform: none;
+  color: var(--ink);
+}
+.situation-brief dl > div { padding: 24px; }
+.situation-brief .brief-footer { padding: 20px 24px; font-size: 12px; line-height: 1.5; }
+.page-home .hero-layout { align-items: center; gap: clamp(40px, 5vw, 76px); }
+.page-home .hero h1 { font-size: clamp(56px, 6.2vw, 88px); line-height: .98; }
+.page-home .section { padding-block: clamp(72px, 7vw, 104px); }
+.service-list, .simple-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px;
+  margin-top: 52px;
+}
+.service-list article, .simple-steps li { padding-top: 24px; border-top: 1px solid var(--ink); }
+.service-list h3, .simple-steps h3 { margin-top: 24px; font-size: clamp(29px, 2.7vw, 38px); line-height: 1.08; }
+.service-list p, .simple-steps p { margin-top: 20px; color: var(--ink-soft); font-size: 15px; }
+.service-list .service-result { padding-top: 20px; border-top: 1px solid var(--rule); color: var(--blue-dark); }
+.simple-steps { list-style: none; }
+.introduction-section { background: var(--paper-deep); border-block: 1px solid var(--rule); }
+.introduction-layout { display: grid; grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr); gap: clamp(40px, 7vw, 100px); align-items: center; }
+.home-portrait { min-height: 480px; }
+.introduction-copy h2 { max-width: 760px; font-size: clamp(42px, 4.5vw, 64px); }
+.introduction-copy p:not(.section-number) { margin-top: 24px; color: var(--ink-soft); }
+.introduction-copy .text-action { margin-top: 20px; }
+.sample-preview .audit-preview-layout { align-items: center; gap: clamp(40px, 6vw, 88px); }
+.sample-preview .lead-copy { margin-top: 28px; }
+.sample-preview .text-action { margin-top: 24px; }
+.sample-note { padding: clamp(24px, 3vw, 40px); background: var(--paper-light); border-top: 4px solid var(--blue); box-shadow: 0 15px 48px rgba(43, 41, 33, .07); }
+.sample-note h3 { margin: 24px 0; font-size: clamp(30px, 3vw, 40px); line-height: 1.08; }
+.sample-note dl > div { border-top: 1px solid var(--rule); padding-top: 18px; margin-top: 18px; }
+.sample-note dt { color: var(--blue-dark); font-size: 12px; font-weight: 700; }
+.sample-note dd { margin-top: 8px; font-size: 15px; color: var(--ink-soft); }
+.starting-section { border-top: 1px solid var(--rule); }
+.starting-note { margin-top: 42px; display: flex; gap: 40px; align-items: center; justify-content: space-between; }
+.starting-note p { max-width: 670px; font-size: 15px; color: var(--ink-soft); }
+.starting-note p a { color: var(--blue-dark); }
+.contact-card-body .contact-note { font-size: 12px; }
+.callout-section h2 { font-size: clamp(40px, 4.5vw, 64px); line-height: 1.04; }
+.content-main > :is(ol, ul, dl) + p { margin-top: 28px; }
+.contact-copy > .kicker { font-size: 10px; margin-top: 0; color: #bdc1c2; }
+.primary-nav .nav-contact[aria-current="page"] { color: var(--white); }
+@media (max-width: 1100px) {
+  .page-home .hero-layout { grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); }
+  .service-list, .simple-steps { gap: 24px; }
+}
+@media (max-width: 900px) {
+  .primary-nav .nav-contact[aria-current="page"] { color: var(--ink); }
+  .page-home .hero-layout { grid-template-columns: minmax(0, 1fr); }
+  .page-home .hero h1 { max-width: 750px; }
+  .introduction-layout { grid-template-columns: minmax(230px, .7fr) minmax(0, 1fr); gap: 36px; }
+  .service-list, .simple-steps { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .service-list h3, .simple-steps h3 { max-width: 600px; }
+  .service-list p, .simple-steps p { max-width: 660px; }
+  .starting-note { align-items: flex-start; flex-direction: column; gap: 18px; }
+}
+@media (max-width: 700px) {
+  .page-home .hero h1 { font-size: clamp(46px, 11.8vw, 76px); }
+  .introduction-layout { grid-template-columns: minmax(0, 1fr); }
+  .home-portrait { min-height: 380px; }
+  .introduction-copy h2 { font-size: clamp(40px, 10vw, 60px); }
+  .service-list, .simple-steps { margin-top: 36px; }
+  .js .primary-nav { top: 72px; max-height: calc(100svh - 72px); }
+}
+
+/* Full-lifecycle AI and mobile consulting. */
+.service-list .text-action { margin-top: 22px; }
+.wide-heading { max-width: 960px; }
+.delivery-stages {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.5fr);
+  list-style: none;
+  margin-top: 48px;
+  border-block: 1px solid var(--rule-strong);
+}
+.delivery-stages li {
+  padding: 24px 18px;
+  border-right: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-size: clamp(25px, 2.5vw, 35px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+.delivery-stages li:first-child { padding-left: 0; }
+.delivery-stages li:last-child { border-right: 0; }
+.delivery-stages span { display: block; margin-bottom: 14px; color: var(--blue-dark); font: 700 11px var(--font-sans); letter-spacing: .08em; }
+@media (max-width: 700px) {
+  .delivery-stages { grid-template-columns: minmax(0, 1fr); margin-top: 32px; }
+  .delivery-stages li { padding: 18px 0; border-right: 0; border-bottom: 1px solid var(--rule); display: flex; align-items: center; gap: 22px; }
+  .delivery-stages li:last-child { border-bottom: 0; }
+  .delivery-stages span { margin: 0; }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+  .page-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-facts div:nth-child(2) { border-right: 0; }
+  .page-facts div:last-child { grid-column: 1 / -1; border-top: 1px solid var(--rule); padding-left: 0; }
+}
