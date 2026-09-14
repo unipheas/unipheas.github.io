@@ -1,65 +1,62 @@
-# Brian Phillips — Autonomous CTO
+# Brian Phillips — AI and software consulting / Unipheas
 
-> Brian Phillips helps founders and operators establish the truth about stalled,
-> expensive, or provider-dependent software delivery, then build a client-controlled
-> operating foundation when the evidence supports it.
+> Practical AI for business and hands-on software development from concept
+> through production release. Mobile app development is Brian's specialty.
 
-## Primary offer: Engineering Rescue Audit
+## Services
 
-- Fixed fee: $12,500 USD
-- Duration: 2–3 weeks
-- Mode: independent and read-only by default
-- Audience: leaders with a real software product, material operating dependence,
-  and unresolved questions about ownership, delivery, cost, risk, or continuity
+- AI for business: select useful tasks, connect company knowledge and tools,
+  build and test workflows, and train owners or teams to use and review them.
+  Example applications include meeting follow-ups, knowledge retrieval,
+  recurring reports, and software development routines.
+- Mobile apps: product planning, user flows, prototypes, native iOS and
+  cross-platform React Native development, backend integration, device testing,
+  App Store and Google Play release support, and ongoing improvements.
+- Software and technical guidance: web apps, internal tools, APIs, integrations,
+  cloud infrastructure, existing system improvements, and technical direction.
 
-The audit examines company control of repositories, cloud accounts, domains,
-credentials, signing identities, delivery workflows, monitoring, vendor
-dependencies, costs, and operating knowledge. Leadership receives an executive
-risk briefing, ownership and access map, evidence-backed findings, and a
-prioritized 90-day roadmap.
+Brian works directly with clients and can collaborate with an existing team.
+New ideas, prototypes, and existing products are all within scope. Engagements
+start with a conversation; scope, fee, and timing are agreed before paid work.
 
-The audit is not an exhaustive code review, penetration test, legal opinion,
-financial audit, vendor-dispute service, or guarantee of a predetermined result.
-The client is not obligated to hire Brian for implementation afterward.
+## Approach
 
-## Possible work after the audit
+Plan, design, build, test, release, and improve. AI is both a service offered to
+clients and a tool in Brian's own engineering process. AI output is reviewed;
+access, actions, running costs, and approval points are agreed for each workflow.
+Relevant accounts, code, and documentation should remain under client control.
 
-1. Foundation Build — $45,000–$75,000 fixed fee, generally 8–12 weeks
-2. Autonomous Operations — $4,000–$8,000 per month after the foundation is proven
+## Experience
 
-These phases are proposed only when supported by the audit findings. Pricing is
-an indicative public range, not a promise that every situation fits the offer.
+Brian has 15+ years across software development and engineering leadership,
+with a specialty in mobile apps and experience across the full development
+process. Public work includes maintaining and contributing to MAVSDK-Swift.
 
-## Operating principles
+## Optional Engineering Rescue Audit
 
-- The client controls infrastructure, accounts, delivery workflows, technical
-  memory, documentation, and handoff materials.
-- Recommendations identify evidence, business consequence, confidence, owner,
-  timing, and approval requirements.
-- Humans retain approval over production, money, identity, data, security, legal,
-  and destructive decisions.
-- Automation must be observable, testable, reversible, and bounded.
-- The engagement is built for succession, including a usable operating record and exit.
-
-## Brian Phillips
-
-Brian has 15+ years across engineering leadership, mobile and full-stack
-development, infrastructure, delivery operations, vendor transitions, and
-open-source software. Publicly represented work contexts include Tommy Car Wash
-Systems, Nike, Amazon, Toyota, PepsiCo, NAV Canada, IBM, and Rigetti. He has
-maintained and contributed to MAVSDK-Swift.
+For broader questions about existing software ownership, delivery, costs, and
+risks: $12,500 USD fixed fee, 2–3 weeks, independent and read-only by default.
+Deliverables include a risk briefing, ownership map, findings, and a prioritized
+90-day roadmap. The audit is not required for every engagement. Implementation
+and ongoing work are agreed separately.
 
 ## Pages
 
 - Home: https://unipheas.github.io/
-- Engineering Rescue Audit: https://unipheas.github.io/engineering-rescue-audit.html
-- Approach: https://unipheas.github.io/approach.html
+- AI for business: https://unipheas.github.io/ai-for-business.html
+- Mobile apps: https://unipheas.github.io/mobile-app-development.html
+- Working together: https://unipheas.github.io/approach.html
 - About: https://unipheas.github.io/about.html
 - Contact: https://unipheas.github.io/contact.html
+- Audit: https://unipheas.github.io/engineering-rescue-audit.html
+- Fictional assessment example: https://unipheas.github.io/sample-assessment.html
 - Privacy: https://unipheas.github.io/Privacy_Policy.html
+
+Illustrative workflows and assessments are not client case studies or measured
+client outcomes. No private client identity, quotes, or financial results are
+provided as marketing proof.
 
 ## Contact
 
 - Email: brian.phillips@unipheas.com
 - GitHub: https://github.com/unipheas
-- Website: https://unipheas.github.io/ (also reached through unipheas.com)

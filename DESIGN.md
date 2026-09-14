@@ -1,29 +1,38 @@
-# Design system — Brian Phillips / Autonomous CTO
+# Design system — Brian Phillips / AI and software consulting
 
 ## Purpose
 
-This site presents Brian Phillips’ productized Autonomous CTO practice. It is
-for founders and operators who need an independent view of stalled, expensive,
-or provider-dependent software delivery.
+This site presents Brian Phillips' independent AI and software consulting
+practice for business owners and teams. Mobile development is the specialty;
+the offer covers both practical AI for everyday work and software from concept
+through production release.
 
 The site has three jobs:
 
-1. Name the business consequences of opaque software delivery.
-2. Establish senior-practitioner credibility without exposing private client work.
-3. Convert a qualified visitor into a $12,500 Engineering Rescue Audit inquiry.
+1. Explain how Brian helps with AI workflows, mobile apps, and supporting systems.
+2. Establish hands-on engineering experience across planning, design, development,
+   testing, release, operations, and owner training.
+3. Start a conversation, followed by an agreed scope and fee.
 
 ## Information architecture
 
-- `index.html` — positioning, problem recognition, method, commercial path, fit
-- `engineering-rescue-audit.html` — offer, deliverables, process, scope, FAQ
-- `approach.html` — ownership, sequencing, governance, visibility, exit
-- `about.html` — operator background, public experience, working style
-- `contact.html` — fit filter and structured email inquiry
+- `index.html` — positioning, services, background, illustrative AI workflow, lifecycle
+- `ai-for-business.html` — concrete uses, sample workflow, setup, testing, and training
+- `mobile-app-development.html` — idea-to-release mobile services and supporting systems
+- `approach.html` — full development process, collaboration, ownership, and FAQs
+- `about.html` — mobile specialization, broad engineering experience, AI practice
+- `contact.html` — inclusive inquiry for ideas, AI workflows, and existing products
+- `engineering-rescue-audit.html` — optional independent review
+- `sample-assessment.html` — explicitly fictional handoff assessment
 - `Privacy_Policy.html` — website and published-app privacy practices
 - `404.html` — recovery route
 
-All public content is English-only. Private or embargoed client evidence is not
-used as public marketing proof.
+All content is English-only. No private client details, quotations, metrics,
+or unsupported claims are used as public proof. Illustrations are labeled.
+Avoid implying the practice serves only distressed or existing products.
+AI is a concrete client capability and an engineering tool; it does not replace
+Brian's accountability for the work. Keep implementation details on service
+pages where they help a visitor decide.
 
 ## Visual thesis
 
@@ -74,7 +83,7 @@ is used as ambient decoration.
 - Name fees, timeframes, boundaries, ownership, and decision rights.
 - Separate verifiable experience from promised outcomes.
 - Record unknowns as unknowns and avoid unsupported performance claims.
-- Prefer “client-controlled” and “human-governed” to abstract transformation language.
+- Use familiar business language: company access, clear updates, and agreed work.
 - Avoid generic phrases such as “unlock the power,” “innovative solutions,” and
   “AI-powered.”
 
