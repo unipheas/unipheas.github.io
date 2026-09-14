@@ -105,3 +105,11 @@ is used as ambient decoration.
 - Anchor navigation clears the sticky header.
 - Images have intrinsic dimensions and useful alternative text.
 - Page hierarchy and actions remain understandable without motion or JavaScript.
+
+## Homepage illustration
+
+Use the custom inline SVG product map in the experience section, showing the
+relationship between business goals, mobile apps, AI workflows, and supporting
+systems. It is explanatory artwork, not a live status dashboard or a client
+architecture. Keep the portrait on the About page. The audit remains a secondary
+footer offer labeled "Software audit".

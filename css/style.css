@@ -2476,3 +2476,31 @@ img {
   .page-facts div:nth-child(2) { border-right: 0; }
   .page-facts div:last-child { grid-column: 1 / -1; border-top: 1px solid var(--rule); padding-left: 0; }
 }
+
+/* Explanatory product map, replacing the homepage portrait. */
+.product-map {
+  width: 100%;
+  padding: clamp(18px, 2vw, 28px);
+  border-top: 3px solid var(--blue);
+  background: linear-gradient(145deg, #202c3d, #171a1d 72%);
+  color: var(--white);
+  box-shadow: 0 20px 54px rgba(23, 26, 29, .12);
+}
+.product-map-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #3b4654;
+  color: #b9c8df;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.product-map svg { display: block; width: 100%; height: auto; margin-block: 18px 12px; font-family: var(--font-sans); }
+.product-map figcaption { padding-top: 18px; border-top: 1px solid #3b4654; font-size: 13px; line-height: 1.6; color: #bdc8d8; }
+@media (min-width: 701px) and (max-width: 900px) {
+  .page-home .introduction-layout { grid-template-columns: minmax(0, 1fr); }
+  .product-map { max-width: 520px; }
+}
