@@ -2,37 +2,36 @@
 
 ## Purpose
 
-This site presents Brian Phillips' independent AI and software consulting
-practice for business owners and teams. Mobile development is the specialty;
-the offer covers both practical AI for everyday work and software from concept
-through production release.
+Unipheas is Brian Phillips' independent consulting practice. The offer is building
+a business's capability to develop, release, and operate its own products.
+AI workflows, company knowledge, development tools, testing, releases, and training
+make that offer concrete. Mobile and full-stack development are the experience
+behind it, rather than separate app-building packages.
 
-The site has three jobs:
-
-1. Explain how Brian helps with AI workflows, mobile apps, and supporting systems.
-2. Establish hands-on engineering experience across planning, design, development,
-   testing, release, operations, and owner training.
-3. Start a conversation, followed by an agreed scope and fee.
+The homepage moves from positioning and recognizable situations to three entry
+points (establish, improve, stabilize), background, an illustrative example,
+and an agreed first engagement. Unipheas is the primary identity; Brian remains
+visible as the person doing the work.
 
 ## Information architecture
 
-- `index.html` — positioning, services, background, illustrative AI workflow, lifecycle
-- `ai-for-business.html` — concrete uses, sample workflow, setup, testing, and training
-- `mobile-app-development.html` — idea-to-release mobile services and supporting systems
-- `approach.html` — full development process, collaboration, ownership, and FAQs
-- `about.html` — mobile specialization, broad engineering experience, AI practice
-- `contact.html` — inclusive inquiry for ideas, AI workflows, and existing products
-- `engineering-rescue-audit.html` — optional independent review
+- `index.html` — product development systems, situations, outcomes, process graphic
+- `ai-for-business.html` — AI workflows, implementation, testing, and training
+- `mobile-app-development.html` — mobile expertise within the broader offer; retain URL
+- `approach.html` — engagement process, deliverables, ownership, buyer questions
+- `about.html` — user-confirmed experience and direct involvement
+- `contact.html` — product, current development process, desired change
+- `engineering-rescue-audit.html` — optional review; scope and fees agreed individually
 - `sample-assessment.html` — explicitly fictional handoff assessment
 - `Privacy_Policy.html` — website and published-app privacy practices
 - `404.html` — recovery route
 
-All content is English-only. No private client details, quotations, metrics,
-or unsupported claims are used as public proof. Illustrations are labeled.
-Avoid implying the practice serves only distressed or existing products.
-AI is a concrete client capability and an engineering tool; it does not replace
-Brian's accountability for the work. Keep implementation details on service
-pages where they help a visitor decide.
+Keep English-only content, the homepage graphic, and the About portrait. Do not
+publish private client names, results, logos, or records. User-confirmed 15+ years
+and engineering breadth are used; unverified public-project credentials are omitted.
+Do not promise autonomous development, guaranteed results, or preset engagement
+prices or timelines. Retain the verified GitHub Pages production URL until custom
+domain configuration is separately authorized and verified.
 
 ## Visual thesis
 
@@ -80,7 +79,7 @@ is used as ambient decoration.
 ## Voice and evidence
 
 - Direct, commercially specific, and calm.
-- Name fees, timeframes, boundaries, ownership, and decision rights.
+- Explain how scope and fees are agreed, along with ownership and responsibilities.
 - Separate verifiable experience from promised outcomes.
 - Record unknowns as unknowns and avoid unsupported performance claims.
 - Use familiar business language: company access, clear updates, and agreed work.
@@ -108,8 +107,7 @@ is used as ambient decoration.
 
 ## Homepage illustration
 
-Use the custom inline SVG product map in the experience section, showing the
-relationship between business goals, mobile apps, AI workflows, and supporting
-systems. It is explanatory artwork, not a live status dashboard or a client
-architecture. Keep the portrait on the About page. The audit remains a secondary
-footer offer labeled "Software audit".
+Use the custom inline SVG to show the repeating plan, build, check, and release
+cycle. Company knowledge, AI, and human review support every step. It is explanatory
+artwork, not a live dashboard or a client architecture. The audit remains a
+secondary footer offer labeled "Software audit".

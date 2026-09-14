@@ -4,259 +4,64 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.classList.add("js");</script>
-  <title>Engineering Rescue Audit | Brian Phillips</title>
-  <meta name="description" content="An optional, independent review of software ownership, delivery, costs, and risks. $12,500 fixed fee over 2–3 weeks, with a prioritized 90-day plan.">
+  <title>Software Ownership &amp; Development Process Audit | Unipheas</title>
+  <meta name="description" content="An optional review of software ownership, release processes, reliability, and knowledge gaps, with clear findings and prioritized next steps.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="theme-color" content="#f4f1e8">
   <link rel="canonical" href="https://unipheas.github.io/engineering-rescue-audit.html">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <meta property="og:title" content="Engineering Rescue Audit | Brian Phillips">
-  <meta property="og:description" content="An optional, independent review of software ownership, delivery, costs, and risks. $12,500 fixed fee over 2–3 weeks, with a prioritized 90-day plan.">
+  <meta property="og:title" content="Software Ownership &amp; Development Process Audit | Unipheas">
+  <meta property="og:description" content="An optional review of software ownership, release processes, reliability, and knowledge gaps, with clear findings and prioritized next steps.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://unipheas.github.io/engineering-rescue-audit.html">
-  <meta property="og:image" content="https://unipheas.github.io/img/software-help-card.png">
+  <meta property="og:image" content="https://unipheas.github.io/img/development-systems-card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Brian Phillips. Put AI to work. Build what your business needs. AI consulting, mobile apps, and software development.">
+  <meta property="og:image:alt" content="Unipheas. Build the capability to ship your product. Product development systems and practical AI. Brian Phillips.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Engineering Rescue Audit | Brian Phillips">
-  <meta name="twitter:description" content="An optional, independent review of software ownership, delivery, costs, and risks. $12,500 fixed fee over 2–3 weeks, with a prioritized 90-day plan.">
-  <meta name="twitter:image" content="https://unipheas.github.io/img/software-help-card.png">
+  <meta name="twitter:title" content="Software Ownership &amp; Development Process Audit | Unipheas">
+  <meta name="twitter:description" content="An optional review of software ownership, release processes, reliability, and knowledge gaps, with clear findings and prioritized next steps.">
+  <meta name="twitter:image" content="https://unipheas.github.io/img/development-systems-card.png">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      "@id": "https://unipheas.github.io/engineering-rescue-audit.html#service",
-      "name": "Engineering Rescue Audit",
+      "@type": "WebPage",
+      "@id": "https://unipheas.github.io/engineering-rescue-audit.html#webpage",
       "url": "https://unipheas.github.io/engineering-rescue-audit.html",
-      "serviceType": "Software delivery and technical ownership audit",
-      "provider": {
-        "@type": "Person",
-        "@id": "https://unipheas.github.io/#brian-phillips",
-        "name": "Brian Phillips"
+      "name": "Software Ownership & Development Process Audit | Unipheas",
+      "description": "An optional review of software ownership, release processes, reliability, and knowledge gaps, with clear findings and prioritized next steps.",
+      "isPartOf": {
+        "@id": "https://unipheas.github.io/#website"
       },
-      "description": "A two-to-three-week evidence-backed assessment of software ownership, delivery, accounts, infrastructure, vendor dependence, risk, cost visibility, and continuity.",
-      "offers": {
-        "@type": "Offer",
-        "price": "12500",
-        "priceCurrency": "USD",
-        "url": "https://unipheas.github.io/contact.html"
+      "about": {
+        "@id": "https://unipheas.github.io/#brian-phillips"
       }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://unipheas.github.io/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Engineering Rescue Audit",
-          "item": "https://unipheas.github.io/engineering-rescue-audit.html"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is the Engineering Rescue Audit a source-code review?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. It is a business-facing assessment of ownership, delivery, infrastructure, access, vendor dependence, risk, cost visibility, and continuity. Source code is examined where it supports a material finding, but the engagement is not an exhaustive code review or penetration test."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does the audit require changing production systems?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The audit is read-only by default. Production changes, credential rotation, vendor termination, and destructive operations are outside scope unless separately authorized after the findings are understood."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do we have to hire Brian for implementation afterward?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. The audit stands on its own. Leadership receives an evidence-backed decision record and a prioritized 90-day roadmap that can be used with Brian, an internal team, or another qualified provider."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What access is needed for the audit?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The exact access list depends on the product, but typically includes read access to repositories, cloud and hosting environments, deployment workflows, monitoring, vendor agreements or statements of work, account inventories, and relevant operating documentation."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can the audit guarantee a vendor-failure finding or recover missing access?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Findings remain independent. The audit does not promise a particular conclusion, legal opinion, recovery of missing systems, or a guaranteed business outcome."
-          }
-        }
-      ]
     }
   ]
 }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=15">
 </head>
 <body class="">
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header" data-header>
     <div class="nav-shell">
-      <a class="site-identity" href="index.html"><span class="identity-mark">BP</span><span class="identity-copy"><strong>Brian Phillips</strong><span>AI &amp; software consulting</span></span></a>
+      <a class="site-identity" href="index.html"><span class="identity-mark">U</span><span class="identity-copy"><strong>Unipheas</strong><span>Brian Phillips · Independent consultant</span></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle><span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
-      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-menu><a href="ai-for-business.html">AI for business</a><a href="mobile-app-development.html">Mobile apps</a><a href="approach.html">Working together</a><a href="about.html">About</a><a href="contact.html" class="nav-contact">Let’s talk</a></nav>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-menu><a href="index.html#services">How I help</a><a href="ai-for-business.html">AI workflows</a><a href="approach.html">Working together</a><a href="about.html">About</a><a href="contact.html" class="nav-contact">Let’s talk</a></nav>
     </div>
   </header>
-  <main id="main">
-
-    <section class="page-hero" aria-labelledby="page-title">
-      <div class="page-shell">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Engineering Rescue Audit</span></nav>
-        <div class="page-hero-layout">
-          <div class="page-hero-copy">
-            <p class="kicker"><span></span> For a deeper review</p>
-            <h1 id="page-title">Understand your software.<br><em>Decide what comes next.</em></h1>
-          </div>
-          <div class="page-hero-summary">
-            <p>The Engineering Rescue Audit is a broader review for situations where ownership, development progress, and costs are all unclear. You receive the findings and a prioritized plan for the next 90 days.</p>
-            <dl class="page-facts">
-              <div><dt>Fee</dt><dd>$12,500</dd></div>
-              <div><dt>Duration</dt><dd>2–3 weeks</dd></div>
-              <div><dt>Mode</dt><dd>Independent</dd></div>
-            </dl>
-            <a class="button button-primary" href="contact.html">Discuss the audit <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="why-audit-title">
-      <div class="page-shell content-layout">
-        <div class="content-aside">
-          <p class="section-number">01 / When it helps</p>
-          <h2 id="why-audit-title">Get an independent view before a major decision.</h2>
-        </div>
-        <div class="content-main">
-          <p class="lead-copy">Consider this when you are weighing a rebuild, changing developers, or trying to understand a substantial ongoing development bill. For a specific repair or smaller handoff, we can discuss a focused scope instead.</p>
-          <p>I examine the available code, accounts, documentation, and costs. Each significant finding explains the evidence, what remains uncertain, why it matters, and what I recommend. You can use the result with your team, with me, or with another developer.</p>
-          <dl class="detail-list">
-            <div><dt>Ownership</dt><dd>Repositories, cloud accounts, domains, signing identities, credentials, payment methods, and decision rights.</dd></div>
-            <div><dt>Delivery</dt><dd>What was supposed to ship, what can be verified, how work reaches production, and how failure is handled.</dd></div>
-            <div><dt>Risk</dt><dd>Single points of failure, access gaps, fragile release paths, security exposure, vendor dependence, and continuity threats.</dd></div>
-            <div><dt>Cost visibility</dt><dd>What you spend on developers, hosting, tools, and repeated fixes.</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="deliverables-title">
-      <div class="page-shell content-layout">
-        <div class="content-aside">
-          <p class="section-number">02 / What you receive</p>
-          <h2 id="deliverables-title">Findings you can understand and act on.</h2>
-        </div>
-        <div class="content-main">
-          <ol class="deliverable-list">
-            <li><h3>Executive risk briefing</h3><p>A plain-English account of the most material business exposure, what requires immediate action, and what can wait.</p></li>
-            <li><h3>Ownership and access map</h3><p>A record of critical systems, company control, outside dependencies, missing access, and named owners.</p></li>
-            <li><h3>Technical and delivery findings</h3><p>Evidence-backed findings across repositories, infrastructure, releases, monitoring, continuity, vendor obligations, and operating practice.</p></li>
-            <li><h3>Prioritized 90-day roadmap</h3><p>Sequenced actions with dependencies, owners, timing, and the decisions required before implementation.</p></li>
-            <li><h3>Options for what comes next</h3><p>Implementation paths are presented only when supported by the findings. You are not obligated to hire me for the next phase.</p></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="process-title">
-      <div class="page-shell content-layout">
-        <div class="content-aside">
-          <p class="section-number">03 / The process</p>
-          <h2 id="process-title">A review over two to three weeks.</h2>
-        </div>
-        <div class="content-main">
-          <ol class="timeline">
-            <li><span>Days 1–3</span><h3>Access and obligations</h3><p>Confirm the questions leadership needs answered. Inventory accounts, repositories, vendors, commitments, and available evidence.</p></li>
-            <li><span>Week 1</span><h3>Establish the system record</h3><p>Trace how the product is built, deployed, monitored, funded, and controlled. Record evidence gaps rather than filling them with assumptions.</p></li>
-            <li><span>Week 2</span><h3>Test the operating claims</h3><p>Compare stated process with observable reality. Rank findings by business consequence, urgency, and confidence.</p></li>
-            <li><span>Week 3</span><h3>Decide the next 90 days</h3><p>Deliver the executive readout, risk register, ownership map, and roadmap. Separate immediate protection from longer-term improvement.</p></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section dark-content" aria-labelledby="scope-title">
-      <div class="page-shell content-layout">
-        <div class="content-aside">
-          <p class="section-number">04 / Scope boundaries</p>
-          <h2 id="scope-title">Independent by design.</h2>
-        </div>
-        <div class="content-main">
-          <p class="lead-copy">The audit is designed to clarify the decision without quietly turning discovery into an open-ended build.</p>
-          <div class="scope-grid">
-            <div>
-              <h3>Included</h3>
-              <ul>
-                <li>Repository, delivery, account, access, infrastructure, and vendor inventory</li>
-                <li>Ownership and continuity assessment</li>
-                <li>Risk register and cost visibility review</li>
-                <li>Executive readout and prioritized 90-day roadmap</li>
-              </ul>
-            </div>
-            <div class="excluded">
-              <h3>Not included</h3>
-              <ul>
-                <li>Production changes or credential rotation</li>
-                <li>Penetration testing, legal opinions, or financial audits</li>
-                <li>Vendor termination or dispute representation</li>
-                <li>Guaranteed recovery of missing systems or access</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="faq-title">
-      <div class="page-shell content-layout">
-        <div class="content-aside">
-          <p class="section-number">05 / Common questions</p>
-          <h2 id="faq-title">What to know before the audit.</h2>
-        </div>
-        <div class="content-main faq-list">
-          <details><summary>Is this an exhaustive source-code review?</summary><p>No. It is a business-facing assessment of ownership, delivery, infrastructure, access, vendor dependence, risk, cost visibility, and continuity. Source code is examined where it supports a material finding, but the engagement is not an exhaustive code review or penetration test.</p></details>
-          <details><summary>Does the audit require changing production systems?</summary><p>No. The audit is read-only by default. Production changes, credential rotation, vendor termination, and destructive operations are outside scope unless separately authorized after the findings are understood.</p></details>
-          <details><summary>Do we have to hire you for implementation afterward?</summary><p>No. The audit stands on its own. Leadership receives an evidence-backed decision record and a prioritized 90-day roadmap that can be used with me, an internal team, or another qualified provider.</p></details>
-          <details><summary>What access is needed?</summary><p>The exact access list depends on the product, but typically includes read access to repositories, cloud and hosting environments, deployment workflows, monitoring, vendor agreements or statements of work, account inventories, and relevant operating documentation.</p></details>
-          <details><summary>Can the audit guarantee a vendor-failure finding or recover missing access?</summary><p>No. Findings remain independent. The audit does not promise a particular conclusion, legal opinion, recovery of missing systems, or a guaranteed business outcome.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section callout-section" aria-labelledby="audit-cta-title">
-      <div class="page-shell callout-layout">
-        <div><p class="section-number section-number-light">Talk it through</p><h2 id="audit-cta-title">Is a broader review the right next step?</h2></div>
-        <div class="callout-action"><p>Tell me about the software and the questions you need answered. We can discuss whether the audit fits your situation.</p><a class="button button-light" href="contact.html">Discuss the audit <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </section>
-
+  <main id="main" tabindex="-1">
+    <section class="page-hero" aria-labelledby="page-title"><div class="page-shell">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Software audit</span></nav>
+      <div class="page-hero-layout"><div class="page-hero-copy"><p class="kicker"><span></span>An optional starting point</p><h1 id="page-title">Understand your software.<br><em>Decide what comes next.</em></h1></div><div class="page-hero-summary"><p>An independent review of how your product is built, released, and operated. Useful when ownership is unclear, changes are difficult, or you need a grounded plan before improving the development process.</p><a class="button button-primary" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a></div></div>
+    </div></section>    <section class="content-section" id="scope" aria-labelledby="scope-title"><div class="page-shell content-layout"><div class="content-aside"><p class="section-number">01 / What we review</p><h2 id="scope-title">The product and the operation behind it.</h2></div><div class="content-main"><dl class="detail-list"><div><dt>Ownership and access</dt><dd>Who controls the code, hosting, services, and release accounts, and what the business can access directly.</dd></div><div><dt>Development and releases</dt><dd>How changes are prepared, checked, and published. Whether another person can follow the process.</dd></div><div><dt>Reliability and maintenance</dt><dd>Recurring problems, monitoring, dependencies, and the work needed to keep the product operating.</dd></div><div><dt>Knowledge and handoffs</dt><dd>Where important decisions and operating instructions live, and what is missing when people change.</dd></div></dl></div></div></section>    <section class="content-section" id="findings" aria-labelledby="findings-title"><div class="page-shell content-layout"><div class="content-aside"><p class="section-number">02 / What you receive</p><h2 id="findings-title">A clear picture and a practical next step.</h2></div><div class="content-main"><p class="lead-copy">Findings that separate verified problems from open questions, with the implications for your business.</p><p>The agreed deliverables can include an ownership map, a review of the release process, and prioritized recommendations for stabilizing or improving the operation.</p><p>We set the scope, fee, and timing before the review starts. Implementation is scoped separately.</p><a class="text-action" href="sample-assessment.html">Read a fictional assessment <span aria-hidden="true">→</span></a></div></div></section>    <section class="content-section" id="boundaries" aria-labelledby="boundaries-title"><div class="page-shell content-layout"><div class="content-aside"><p class="section-number">03 / How the review works</p><h2 id="boundaries-title">Agree the questions. Examine the evidence.</h2></div><div class="content-main"><p>We identify the decisions the review needs to support and the access required. The review is read-only unless we explicitly agree implementation work.</p><p>I walk you through the findings, their limits, and the recommended priorities. You can use the assessment to guide your own team or discuss a follow-on engagement.</p><p>An audit is optional. A focused workflow or release problem may have a smaller, more useful starting point.</p></div></div></section><section class="content-section callout-section" aria-labelledby="cta-title"><div class="page-shell callout-layout"><div><p class="section-number section-number-light">Start with a conversation</p><h2 id="cta-title">What’s holding your product back?</h2></div><div class="callout-action"><p>Tell me where you are today and what you want your business to be able to do next.</p><a class="button button-light" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
-  <footer class="site-footer"><div class="page-shell footer-layout"><div><strong>Brian Phillips</strong><span>AI &amp; software · Unipheas</span></div><nav aria-label="Footer navigation"><a href="ai-for-business.html">AI for business</a><a href="mobile-app-development.html">Mobile apps</a><a href="approach.html">Working together</a><a href="about.html">About</a><a href="engineering-rescue-audit.html" aria-current="page">Software audit</a><a href="contact.html">Contact</a><a href="Privacy_Policy.html">Privacy</a></nav><p>© 2026 Brian Phillips</p></div></footer>
+  <footer class="site-footer"><div class="page-shell footer-layout"><div><strong>Unipheas</strong><span>Brian Phillips · Product development systems</span></div><nav aria-label="Footer navigation"><a href="index.html#services">How I help</a><a href="ai-for-business.html">AI workflows</a><a href="approach.html">Working together</a><a href="about.html">About</a><a href="mobile-app-development.html">Mobile expertise</a><a href="engineering-rescue-audit.html" aria-current="page">Software audit</a><a href="contact.html">Contact</a><a href="Privacy_Policy.html">Privacy</a></nav><p>© 2026 Brian Phillips</p></div></footer>
   <script src="js/site.js?v=11" defer></script>
 </body>
 </html>
