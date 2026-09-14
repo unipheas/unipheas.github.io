@@ -1,62 +1,42 @@
-# Brian Phillips — AI and software consulting / Unipheas
+# Unipheas — Product development systems and practical AI
 
-> Practical AI for business and hands-on software development from concept
-> through production release. Mobile app development is Brian's specialty.
+> Brian Phillips helps businesses establish the tools, AI workflows, engineering
+> practices, and knowledge to develop, release, and maintain their own products.
 
-## Services
+Unipheas is Brian's independent consulting practice. Clients work directly with
+him. He has more than 15 years across full-stack development, mobile development,
+and software systems. Mobile is a specialty supporting the broader offer.
 
-- AI for business: select useful tasks, connect company knowledge and tools,
-  build and test workflows, and train owners or teams to use and review them.
-  Example applications include meeting follow-ups, knowledge retrieval,
-  recurring reports, and software development routines.
-- Mobile apps: product planning, user flows, prototypes, native iOS and
-  cross-platform React Native development, backend integration, device testing,
-  App Store and Google Play release support, and ongoing improvements.
-- Software and technical guidance: web apps, internal tools, APIs, integrations,
-  cloud infrastructure, existing system improvements, and technical direction.
+## Engagements
 
-Brian works directly with clients and can collaborate with an existing team.
-New ideas, prototypes, and existing products are all within scope. Engagements
-start with a conversation; scope, fee, and timing are agreed before paid work.
+- Establish: connect product priorities, company knowledge, AI tools, code review,
+  testing, and releases into a working development process.
+- Improve: implement AI workflows, clarify handoffs, and reduce repeated work.
+- Stabilize: understand existing systems, resolve ownership and process gaps,
+  and establish how to diagnose problems and maintain the product.
 
-## Approach
+The focus is building the client's ability to develop and operate products.
+Implementation on real product work establishes and validates the process.
+Deliverables are agreed for each engagement and can include configured tools,
+documented workflows, release procedures, and owner or team training.
+Scope, fees, and timing are agreed before paid work begins. Ongoing work is
+scoped separately. An independent software audit is an optional starting point.
 
-Plan, design, build, test, release, and improve. AI is both a service offered to
-clients and a tool in Brian's own engineering process. AI output is reviewed;
-access, actions, running costs, and approval points are agreed for each workflow.
-Relevant accounts, code, and documentation should remain under client control.
-
-## Experience
-
-Brian has 15+ years across software development and engineering leadership,
-with a specialty in mobile apps and experience across the full development
-process. Public work includes maintaining and contributing to MAVSDK-Swift.
-
-## Optional Engineering Rescue Audit
-
-For broader questions about existing software ownership, delivery, costs, and
-risks: $12,500 USD fixed fee, 2–3 weeks, independent and read-only by default.
-Deliverables include a risk briefing, ownership map, findings, and a prioritized
-90-day roadmap. The audit is not required for every engagement. Implementation
-and ongoing work are agreed separately.
+AI workflows use agreed access, checks, and human review. Engineering expertise
+remains necessary. Company code, accounts, and documentation should stay under
+client control. Examples on the site are illustrative, not client results.
 
 ## Pages
 
 - Home: https://unipheas.github.io/
-- AI for business: https://unipheas.github.io/ai-for-business.html
-- Mobile apps: https://unipheas.github.io/mobile-app-development.html
+- AI workflows: https://unipheas.github.io/ai-for-business.html
+- Mobile expertise: https://unipheas.github.io/mobile-app-development.html
 - Working together: https://unipheas.github.io/approach.html
-- About: https://unipheas.github.io/about.html
+- Brian Phillips: https://unipheas.github.io/about.html
 - Contact: https://unipheas.github.io/contact.html
-- Audit: https://unipheas.github.io/engineering-rescue-audit.html
-- Fictional assessment example: https://unipheas.github.io/sample-assessment.html
+- Software audit: https://unipheas.github.io/engineering-rescue-audit.html
+- Fictional assessment: https://unipheas.github.io/sample-assessment.html
 - Privacy: https://unipheas.github.io/Privacy_Policy.html
 
-Illustrative workflows and assessments are not client case studies or measured
-client outcomes. No private client identity, quotes, or financial results are
-provided as marketing proof.
-
-## Contact
-
-- Email: brian.phillips@unipheas.com
-- GitHub: https://github.com/unipheas
+Email: brian.phillips@unipheas.com
+GitHub: https://github.com/unipheas

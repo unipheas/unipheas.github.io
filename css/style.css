@@ -2299,31 +2299,6 @@ img {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .hero-copy,
-  .page-hero-copy,
-  .contact-copy {
-    animation: enter-up 620ms cubic-bezier(.2, .75, .25, 1) both;
-  }
-
-  .control-brief,
-  .portrait-panel,
-  .contact-card {
-    animation: enter-up 620ms 90ms cubic-bezier(.2, .75, .25, 1) both;
-  }
-
-  @keyframes enter-up {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
