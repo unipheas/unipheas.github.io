@@ -1,4 +1,4 @@
-# Unipheas — Product development systems and practical AI
+# Unipheas — AI engineering and automation consulting
 
 > Brian Phillips helps businesses establish the tools, AI workflows, engineering
 > practices, and knowledge to develop, release, and maintain their own products.
@@ -9,22 +9,13 @@ and software systems. Mobile is a specialty supporting the broader offer.
 
 ## Engagements
 
-- Establish: connect product priorities, company knowledge, AI tools, code review,
-  testing, and releases into a working development process.
-- Improve: implement AI workflows, clarify handoffs, and reduce repeated work.
-- Stabilize: understand existing systems, resolve ownership and process gaps,
-  and establish how to diagnose problems and maintain the product.
+For CTOs, technical founders, and enterprise engineering teams investing in AI development infrastructure.
 
-The focus is building the client's ability to develop and operate products.
-Implementation on real product work establishes and validates the process.
-Deliverables are agreed for each engagement and can include configured tools,
-documented workflows, release procedures, and owner or team training.
-Scope, fees, and timing are agreed before paid work begins. Ongoing work is
-scoped separately. An independent software audit is an optional starting point.
+- Assessment and architecture: delivery baseline, target architecture, prioritized roadmap.
+- Implementation: agent orchestration, repository context, isolated environments, automated testing, CI/CD, and human review.
+- Ongoing engineering partnership: agreed delivery capacity, technical direction, workflow maintenance, and measured improvement.
 
-AI workflows use agreed access, checks, and human review. Engineering expertise
-remains necessary. Company code, accounts, and documentation should stay under
-client control. Examples on the site are illustrative, not client results.
+Scope, fees, success measures, and responsibilities are agreed before work begins. Client accounts and code remain under client control. Examples are illustrative, not client results. No guaranteed performance or unattended production operation is promised.
 
 ## Pages
 

@@ -111,3 +111,7 @@ Use the custom inline SVG to show the repeating plan, build, check, and release
 cycle. Company knowledge, AI, and human review support every step. It is explanatory
 artwork, not a live dashboard or a client architecture. The audit remains a
 secondary footer offer labeled "Software audit".
+
+## September 2026 positioning
+
+Target CTOs, technical founders, and enterprise engineering leaders investing in AI development infrastructure. Lead with architecture, implementation, and ongoing engineering partnerships. Describe agent orchestration, CI/CD, evaluation, access controls, review, and rollback concretely. Preserve the established visual identity and verified experience. Never fabricate case studies, client logos, performance metrics, or guaranteed autonomous operation.
