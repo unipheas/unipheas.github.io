@@ -115,3 +115,7 @@ secondary footer offer labeled "Software audit".
 ## September 2026 positioning
 
 Target CTOs, technical founders, and enterprise engineering leaders investing in AI development infrastructure. Lead with architecture, implementation, and ongoing engineering partnerships. Describe agent orchestration, CI/CD, evaluation, access controls, review, and rollback concretely. Preserve the established visual identity and verified experience. Never fabricate case studies, client logos, performance metrics, or guaranteed autonomous operation.
+
+## Marketing refinement — 2026-09-28
+
+Keep the paper, ink, and cobalt identity. Use plain engineering and business language. Lead with software delivery and concrete service scope; AI is a capability within the work. Remove decorative numbered labels and repetitive slogans. Published fees: $350/hour (owner confirmed); $12,500 audit, $45K–$75K implementation planning range, and $4K–$8K monthly planning range recovered from previous published offers. Defined scope and written terms govern projects. Do not invent LLC status, client proof, certifications, or performance claims.

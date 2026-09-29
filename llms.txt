@@ -1,33 +1,24 @@
-# Unipheas — AI engineering and automation consulting
+# Unipheas — Brian Phillips
 
-> Brian Phillips helps businesses establish the tools, AI workflows, engineering
-> practices, and knowledge to develop, release, and maintain their own products.
+> Independent software and AI engineering consulting for companies with an active product, technical sponsor, and defined delivery needs.
 
-Unipheas is Brian's independent consulting practice. Clients work directly with
-him. He has more than 15 years across full-stack development, mobile development,
-and software systems. Mobile is a specialty supporting the broader offer.
+Brian Phillips has more than 15 years across mobile, full-stack development, and software systems. Clients work directly with Brian. Services include AI development workflows, delivery automation, mobile engineering, software audits, and ongoing technical partnerships.
 
-## Engagements
+## Fees (USD)
+- General consulting: $350/hour, with scope and expected effort agreed.
+- Engineering Rescue Audit: $12,500 fixed for agreed scope, planned over 2–3 weeks after access is ready. Findings and a 90-day roadmap; implementation excluded.
+- Foundation implementation: $45,000–$75,000 planning range; final scope and fee quoted.
+- Ongoing partnership: $4,000–$8,000/month planning range; capacity and support boundaries defined in writing. Not unlimited or 24/7 coverage.
 
-For CTOs, technical founders, and enterprise engineering teams investing in AI development infrastructure.
+## Authoritative pages
+- [Software and AI engineering consulting](https://unipheas.github.io/): Brian Phillips helps companies improve software delivery, implement AI development workflows, and resolve technical risk. Senior consulting at $350/hour.
+- [AI development and delivery automation](https://unipheas.github.io/ai-for-business.html): AI development consulting for engineering teams: agent workflows, repository context, automated testing, CI/CD, and production controls. Work with Brian Phillips.
+- [Engineering Rescue Audit](https://unipheas.github.io/engineering-rescue-audit.html): A $12,500 independent software audit of ownership, delivery, reliability, and costs. Documented findings and a 90-day roadmap, planned over 2–3 weeks.
+- [Consulting fees and engagements](https://unipheas.github.io/approach.html): Review consulting fees: $350/hour, a $12,500 software audit, implementation projects, and ongoing engineering partnerships. Clear scope and direct involvement.
+- [Brian Phillips](https://unipheas.github.io/about.html): Meet Brian Phillips, the engineer behind Unipheas. More than 15 years across mobile, full-stack development, and software systems. Direct, hands-on consulting.
+- [Contact Brian Phillips](https://unipheas.github.io/contact.html): Contact Brian Phillips about software audits, AI development workflows, mobile engineering, or ongoing technical support. Scope and fees agreed before work begins.
+- [Mobile engineering consulting](https://unipheas.github.io/mobile-app-development.html): Senior mobile engineering consulting across apps, backend services, testing, and release automation. Improve reliability and prepare a handoff your team can use.
+- [Software audit example](https://unipheas.github.io/sample-assessment.html): See a fictional software audit finding: evidence, business impact, unknowns, recommendations, and verification steps for a developer handoff. Not a client result.
+- [Privacy policy](https://unipheas.github.io/Privacy_Policy.html): How the Unipheas website and covered apps handle information, hosting, email inquiries, and technical request data. Contact Brian Phillips with privacy questions.
 
-- Assessment and architecture: delivery baseline, target architecture, prioritized roadmap.
-- Implementation: agent orchestration, repository context, isolated environments, automated testing, CI/CD, and human review.
-- Ongoing engineering partnership: agreed delivery capacity, technical direction, workflow maintenance, and measured improvement.
-
-Scope, fees, success measures, and responsibilities are agreed before work begins. Client accounts and code remain under client control. Examples are illustrative, not client results. No guaranteed performance or unattended production operation is promised.
-
-## Pages
-
-- Home: https://unipheas.github.io/
-- AI workflows: https://unipheas.github.io/ai-for-business.html
-- Mobile expertise: https://unipheas.github.io/mobile-app-development.html
-- Working together: https://unipheas.github.io/approach.html
-- Brian Phillips: https://unipheas.github.io/about.html
-- Contact: https://unipheas.github.io/contact.html
-- Software audit: https://unipheas.github.io/engineering-rescue-audit.html
-- Fictional assessment: https://unipheas.github.io/sample-assessment.html
-- Privacy: https://unipheas.github.io/Privacy_Policy.html
-
-Email: brian.phillips@unipheas.com
-GitHub: https://github.com/unipheas
+Sample assessments are explicitly fictional, not evidence of client results. No performance guarantees or compliance certifications are claimed. Contact: brian.phillips@unipheas.com.

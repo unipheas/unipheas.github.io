@@ -1,5 +1,4 @@
-# Public business website. Search and AI discovery crawlers are welcome.
-
+# Public pages are available to search and AI-search crawlers.
 User-agent: *
 Allow: /
 

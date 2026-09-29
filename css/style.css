@@ -2479,3 +2479,32 @@ img {
   .page-home .introduction-layout { grid-template-columns: minmax(0, 1fr); }
   .product-map { max-width: 520px; }
 }
+
+/* Marketing refinement: readable scope and fees on every screen. */
+.example-label { margin-bottom: 20px; color: var(--ink-soft); font-size: 13px; font-weight: 700; }
+.fee-table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.55; }
+.fee-table caption { text-align: left; font-weight: 700; margin-bottom: 20px; }
+.fee-table th, .fee-table td { padding: 22px 16px 22px 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+.fee-table thead th { font-size: 12px; color: var(--ink-soft); }
+.fee-table tbody th { width: 27%; }
+.fee-table td:nth-child(2) { width: 25%; font-weight: 700; color: var(--blue-dark); }
+.fee-table-wrap { margin-block: 28px; }
+.content-main > p, .hero-summary { max-width: 70ch; }
+.page-hero h1 { font-size: clamp(48px, 6.5vw, 92px); }
+.hero-home h1 { font-size: clamp(56px, 7.4vw, 106px); }
+.page-hero-layout { align-items: start; }
+.hero-home, .page-hero { background-image: none; }
+::selection { background: var(--blue-pale); color: var(--ink); }
+@media (max-width: 600px) {
+  .fee-table th, .fee-table td { padding: 16px 8px 16px 0; font-size: 13px; overflow-wrap: anywhere; }
+  .fee-table tbody th { width: 26%; }
+  .fee-table td:nth-child(2) { width: 25%; }
+  .content-aside h2 { font-size: clamp(36px, 9vw, 48px); }
+}
+@media (max-width: 600px) {
+  .fee-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .fee-table tbody, .fee-table tr, .fee-table th, .fee-table td { display: block; width: 100% !important; }
+  .fee-table tr { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  .fee-table th, .fee-table td { border: 0; padding: 5px 0; font-size: 15px; overflow-wrap: normal; }
+  .fee-table tbody th { font-size: 18px; }
+}
