@@ -227,7 +227,7 @@ img {
 .primary-nav {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 2.8vw, 44px);
+  gap: clamp(14px, 1.6vw, 24px);
 }
 
 .primary-nav a {
@@ -2447,6 +2447,7 @@ img {
   .delivery-stages span { margin: 0; }
 }
 @media (min-width: 901px) and (max-width: 1100px) {
+  .identity-copy span { display: none; }
   .page-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .page-facts div:nth-child(2) { border-right: 0; }
   .page-facts div:last-child { grid-column: 1 / -1; border-top: 1px solid var(--rule); padding-left: 0; }
